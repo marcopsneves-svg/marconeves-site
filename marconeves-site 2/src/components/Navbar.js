@@ -13,15 +13,14 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  useEffect(() => {
-    setMenuOpen(false);
-  }, [location]);
+  useEffect(() => { setMenuOpen(false); }, [location]);
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
       <div className="navbar-inner">
         <Link to="/" className="navbar-logo">
-          <img src="/logo-remax.png" alt="RE/MAX Grupo Vantagem" className="logo-img" />
+          <span className="logo-remax-text">RE/MAX</span>
+          <span className="logo-vantagem-text">Grupo Vantagem</span>
         </Link>
 
         <button
