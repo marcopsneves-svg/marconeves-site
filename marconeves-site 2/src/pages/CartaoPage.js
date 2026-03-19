@@ -138,7 +138,7 @@ export default function CartaoPage() {
             <div className="cartao-id">
               <h1>Marco Neves</h1>
               <p>Consultor Imobiliário</p>
-              <img src="/logo-remax.png" alt="RE/MAX Grupo Vantagem" className="cartao-logo-remax" />
+              <div className="cartao-remax-texto"><span>RE/MAX</span><small>Grupo Vantagem</small></div>
             </div>
           </div>
 
@@ -180,7 +180,7 @@ export default function CartaoPage() {
             ))}
           </div>
 
-          <p className="cartao-footer-text">Licença AMI: XXXXXXX · RE/MAX Grupo Vantagem</p>
+          <p className="cartao-footer-text">Licença AMI: 7772 · RE/MAX Grupo Vantagem</p>
         </div>
 
         {/* CALCULADORA */}
