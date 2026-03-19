@@ -1,8 +1,6 @@
 .navbar {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 100;
   padding: 1.2rem 2rem;
   transition: all 0.4s ease;
@@ -24,13 +22,28 @@
   justify-content: space-between;
 }
 
-.navbar-logo { display: flex; align-items: center; }
+.navbar-logo {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  line-height: 1;
+}
 
-.logo-img {
-  height: 44px;
-  width: auto;
-  filter: brightness(0) invert(1);
-  object-fit: contain;
+.logo-remax-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--white);
+  letter-spacing: 0.05em;
+}
+
+.logo-vantagem-text {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.6rem;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
 }
 
 .navbar-links {
@@ -53,16 +66,16 @@
 .navbar-links a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
   background: var(--red);
   transition: width 0.3s ease;
 }
 
-.navbar-links a:hover, .navbar-links a.active { color: var(--white); }
-.navbar-links a:hover::after, .navbar-links a.active::after { width: 100%; }
+.navbar-links a:hover,
+.navbar-links a.active { color: var(--white); }
+.navbar-links a:hover::after,
+.navbar-links a.active::after { width: 100%; }
 
 .btn-cartao {
   background: var(--red) !important;
@@ -87,8 +100,7 @@
 
 .hamburger span {
   display: block;
-  width: 24px;
-  height: 2px;
+  width: 24px; height: 2px;
   background: var(--white);
   transition: all 0.3s ease;
   transform-origin: center;
@@ -103,9 +115,7 @@
   .navbar-links {
     display: none;
     position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
+    top: 100%; left: 0; right: 0;
     background: rgba(5,29,64,0.99);
     flex-direction: column;
     padding: 2rem;
