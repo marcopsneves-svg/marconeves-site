@@ -32,7 +32,7 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Marco Neves · RE/MAX Grupo Vantagem. Todos os direitos reservados.</p>
-        <p>Licença AMI: XXXXXXX</p>
+        <p>Licença AMI: 7772</p>
       </div>
     </footer>
   );
