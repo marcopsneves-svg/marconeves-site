@@ -1,0 +1,108 @@
+.avaliacao-page { min-height: 100vh; }
+
+.avaliacao-hero {
+  padding: 12rem 0 6rem;
+  text-align: center;
+  background: radial-gradient(ellipse at 50% 0%, rgba(216,12,33,0.1) 0%, transparent 60%);
+  border-bottom: 1px solid rgba(216,12,33,0.1);
+}
+
+.avaliacao-hero .section-label {
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.avaliacao-hero h1 {
+  font-family: Montserrat, sans-serif;
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 1.2rem;
+}
+
+.avaliacao-hero p {
+  color: var(--white-muted);
+  font-size: 1.05rem;
+  max-width: 520px;
+  margin: 0 auto;
+  line-height: 1.65;
+}
+
+.avaliacao-body { padding: 6rem 0; }
+
+.avaliacao-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+
+.avaliacao-info h2 {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.6rem;
+  margin-bottom: 2.5rem;
+}
+
+.passo {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.passo-num {
+  font-family: Montserrat, sans-serif;
+  font-size: 1.8rem;
+  color: var(--red);
+  opacity: 0.4;
+  line-height: 1;
+  min-width: 40px;
+}
+
+.passo h3 {
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+}
+
+.passo p {
+  color: var(--white-muted);
+  font-size: 0.88rem;
+  line-height: 1.6;
+}
+
+.avaliacao-contacto-direto {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.08);
+}
+
+.avaliacao-contacto-direto p {
+  color: var(--white-muted);
+  font-size: 0.88rem;
+  margin-bottom: 1rem;
+}
+
+.btn-wa-direto {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 0.85rem 1.8rem;
+  border-radius: 2px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+  margin-bottom: 0.8rem;
+}
+
+.btn-wa-direto:hover { background: #1ebe5a; }
+
+.link-tel {
+  display: block;
+  color: var(--white-muted);
+  font-size: 0.85rem;
+  transition: color 0.2s;
+}
+.link-tel:hover { color: var(--red); }
+
+@media (max-width: 900px) {
+  .avaliacao-grid { grid-template-columns: 1fr; gap: 3rem; }
+}

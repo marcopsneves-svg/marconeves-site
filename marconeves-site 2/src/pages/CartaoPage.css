@@ -1,0 +1,152 @@
+.cartao-page {
+  min-height: 100vh;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1.5rem 4rem;
+}
+
+.cartao {
+  background: var(--blue);
+  border: 1px solid rgba(216,12,33,0.3);
+  border-top: 4px solid var(--red);
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6);
+}
+
+.cartao-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.cartao-logo-mn {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.cartao-id h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--white);
+  margin-bottom: 0.15rem;
+  text-transform: uppercase;
+}
+
+.cartao-id p {
+  font-size: 0.78rem;
+  color: var(--white-muted);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+}
+
+.cartao-logo-remax {
+  height: 24px;
+  width: auto;
+  filter: brightness(0) invert(1);
+}
+
+.cartao-frase {
+  font-family: 'Pacifico', cursive;
+  font-size: 0.9rem;
+  color: rgba(255,255,255,0.5);
+  margin-bottom: 1rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.cartao-divider {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--red), transparent);
+  margin: 0.5rem 0 1.5rem;
+}
+
+.cartao-contactos { display: flex; flex-direction: column; gap: 0.8rem; margin-bottom: 1.5rem; }
+
+.cartao-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  transition: all 0.2s;
+}
+
+.cartao-link:hover { background: rgba(216,12,33,0.1); border-color: rgba(216,12,33,0.3); }
+.cartao-link.whatsapp:hover { background: rgba(37,211,102,0.08); border-color: rgba(37,211,102,0.25); }
+
+.cartao-link-icon { font-size: 1.2rem; width: 28px; text-align: center; flex-shrink: 0; }
+
+.cartao-link small {
+  display: block;
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white-muted);
+  margin-bottom: 0.15rem;
+}
+
+.cartao-link strong { font-size: 0.85rem; color: var(--white); font-weight: 600; }
+
+.cartao-ctas { display: flex; flex-direction: column; gap: 0.6rem; margin-bottom: 1.5rem; }
+
+.cartao-btn-primary {
+  display: block;
+  background: #25D366;
+  color: #fff;
+  padding: 0.9rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.cartao-btn-primary:hover { background: #1ebe5a; }
+
+.cartao-btn-secondary {
+  display: block;
+  background: var(--red);
+  color: var(--white);
+  padding: 0.9rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.cartao-btn-secondary:hover { background: var(--red-light); }
+
+.cartao-tags { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 1.5rem; }
+
+.tag {
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  color: var(--white-muted);
+  border: 1px solid rgba(216,12,33,0.3);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+  text-transform: uppercase;
+}
+
+.cartao-footer-text { text-align: center; font-size: 0.68rem; color: rgba(168,180,196,0.3); }
+
+.partilha-hint { margin-top: 2rem; text-align: center; font-size: 0.82rem; color: var(--white-muted); line-height: 1.6; }
+.partilha-hint strong { color: var(--red); }
