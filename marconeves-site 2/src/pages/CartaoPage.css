@@ -310,6 +310,25 @@
   margin-top: 0.4rem;
 }
 
+.cartao-remax-texto {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+.cartao-remax-texto span {
+  font-size: 0.85rem;
+  font-weight: 800;
+  color: var(--white);
+  font-family: 'Montserrat', sans-serif;
+}
+.cartao-remax-texto small {
+  font-size: 0.5rem;
+  font-weight: 600;
+  color: var(--red);
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+}
+
 .cartao-footer-text { text-align: center; font-size: 0.68rem; color: rgba(168,180,196,0.3); }
 
 .partilha-hint { margin-top: 2rem; text-align: center; font-size: 0.82rem; color: var(--white-muted); line-height: 1.6; }
