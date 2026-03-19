@@ -1,0 +1,198 @@
+.cartao-page {
+  min-height: 100vh;
+  background: var(--dark);
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-wrapper {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8rem 1.5rem 4rem;
+}
+
+.cartao {
+  background: linear-gradient(135deg, #1a1a1a 0%, #0d0d0d 100%);
+  border: 1px solid rgba(201,168,76,0.3);
+  border-radius: 16px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 420px;
+  box-shadow: 0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(201,168,76,0.08);
+}
+
+.cartao-header {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.cartao-avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--dark);
+  flex-shrink: 0;
+}
+
+.cartao-id h1 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--white);
+  margin-bottom: 0.15rem;
+}
+
+.cartao-id p {
+  font-size: 0.82rem;
+  color: var(--white-muted);
+  margin-bottom: 0.3rem;
+}
+
+.cartao-remax {
+  display: inline-block;
+  background: #cc0000;
+  color: #fff;
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+.cartao-divider {
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+  margin: 1rem 0 1.5rem;
+}
+
+.cartao-contactos {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-bottom: 1.5rem;
+}
+
+.cartao-link {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  transition: all 0.2s;
+}
+
+.cartao-link:hover {
+  background: rgba(201,168,76,0.08);
+  border-color: rgba(201,168,76,0.25);
+}
+
+.cartao-link.whatsapp:hover {
+  background: rgba(37,211,102,0.08);
+  border-color: rgba(37,211,102,0.25);
+}
+
+.cartao-link-icon {
+  font-size: 1.2rem;
+  width: 28px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.cartao-link small {
+  display: block;
+  font-size: 0.65rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--white-muted);
+  margin-bottom: 0.15rem;
+}
+
+.cartao-link strong {
+  font-size: 0.88rem;
+  color: var(--white);
+  font-weight: 500;
+}
+
+.cartao-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.cartao-btn-primary {
+  display: block;
+  background: #25D366;
+  color: #fff;
+  padding: 0.9rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.cartao-btn-primary:hover { background: #1ebe5a; }
+
+.cartao-btn-secondary {
+  display: block;
+  background: var(--gold);
+  color: var(--dark);
+  padding: 0.9rem;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+
+.cartao-btn-secondary:hover { background: var(--gold-light); }
+
+.cartao-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.tag {
+  font-size: 0.7rem;
+  letter-spacing: 0.06em;
+  color: var(--white-muted);
+  border: 1px solid rgba(255,255,255,0.1);
+  border-radius: 20px;
+  padding: 0.25rem 0.75rem;
+}
+
+.cartao-footer-text {
+  text-align: center;
+  font-size: 0.7rem;
+  color: rgba(200,196,186,0.3);
+  letter-spacing: 0.06em;
+}
+
+.partilha-hint {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 0.82rem;
+  color: var(--white-muted);
+  line-height: 1.6;
+}
+
+.partilha-hint strong {
+  color: var(--gold);
+}
