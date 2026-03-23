@@ -1,0 +1,196 @@
+.imoveis-page { min-height: 100vh; }
+
+.imoveis-hero {
+  padding: 10rem 0 4rem;
+  text-align: center;
+  background: radial-gradient(ellipse at 50% 0%, rgba(216,12,33,0.08) 0%, transparent 60%);
+  border-bottom: 1px solid rgba(216,12,33,0.1);
+}
+
+.imoveis-hero .section-label { display: block; margin-bottom: 1rem; }
+.imoveis-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem,5vw,3.2rem); font-weight: 800; text-transform: uppercase; margin-bottom: 0.8rem; }
+.imoveis-hero p { color: var(--white-muted); font-size: 1rem; }
+
+.imoveis-body { padding: 4rem 0 6rem; }
+
+.filtros { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+
+.filtro-btn {
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.1);
+  color: var(--white-muted);
+  padding: 0.5rem 1.4rem;
+  border-radius: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.filtro-btn:hover, .filtro-btn.ativo {
+  background: var(--red);
+  border-color: var(--red);
+  color: var(--white);
+}
+
+.imoveis-lista { display: flex; flex-direction: column; gap: 1.5rem; }
+
+.imovel-item {
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 2rem;
+  align-items: start;
+  transition: box-shadow 0.2s;
+}
+
+.imovel-item:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
+
+.imovel-item-top { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
+
+.imovel-tipo-tag {
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.7rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.2rem 0.8rem;
+  border-radius: 2px;
+}
+
+.imovel-destaque-tag {
+  background: rgba(216,12,33,0.1);
+  border: 1px solid rgba(216,12,33,0.3);
+  color: #ff8090;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  border-radius: 20px;
+}
+
+.imovel-item h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 800; margin-bottom: 0.3rem; text-transform: uppercase; }
+
+.imovel-freguesia { font-size: 0.82rem; color: var(--white-muted); margin-bottom: 0.8rem; }
+
+.imovel-item-desc { font-size: 0.88rem; color: var(--white-muted); line-height: 1.65; margin-bottom: 1rem; }
+
+.imovel-item-specs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem; }
+
+.imovel-item-specs span { font-size: 0.75rem; color: var(--white-muted); background: rgba(255,255,255,0.05); padding: 0.25rem 0.6rem; border-radius: 3px; }
+
+.imovel-ref { font-size: 0.7rem; color: rgba(168,180,196,0.4); }
+
+.imovel-item-dir { display: flex; flex-direction: column; gap: 0.8rem; }
+
+.imovel-preco-box { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.preco-antigo { font-size: 0.85rem; color: rgba(168,180,196,0.4); text-decoration: line-through; }
+
+.preco-atual { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--white); }
+
+.btn-ver-remax {
+  display: block;
+  text-align: center;
+  background: var(--blue-mid);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: var(--white);
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+.btn-ver-remax:hover { border-color: var(--white); }
+
+.btn-pedir-info {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: var(--red);
+  color: var(--white);
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s;
+  border: none;
+}
+.btn-pedir-info:hover { background: var(--red-light); }
+
+.imoveis-cta {
+  margin-top: 3rem;
+  text-align: center;
+  padding: 2.5rem;
+  background: var(--dark-2);
+  border-radius: 6px;
+  border: 1px solid rgba(216,12,33,0.2);
+}
+
+.imoveis-cta p { color: var(--white-muted); font-size: 0.9rem; margin-bottom: 1rem; }
+
+.imoveis-cta a {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  padding: 0.85rem 2rem;
+  border-radius: 4px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  transition: background 0.2s;
+}
+.imoveis-cta a:hover { background: #1ebe5a; }
+
+/* MODAL */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.modal-box {
+  background: var(--blue);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 560px;
+  width: 100%;
+  position: relative;
+  max-height: 90vh;
+  overflow-y: auto;
+  border-top: 4px solid var(--red);
+}
+
+.modal-fechar {
+  position: absolute;
+  top: 1rem; right: 1rem;
+  background: none;
+  border: none;
+  color: var(--white-muted);
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  transition: color 0.2s;
+}
+.modal-fechar:hover { color: var(--white); }
+
+.modal-box h3 { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.3rem; }
+
+.modal-imovel-nome { font-size: 0.85rem; color: var(--red); margin-bottom: 1.5rem; font-weight: 600; }
+
+@media (max-width: 768px) {
+  .imovel-item { grid-template-columns: 1fr; }
+  .imovel-item-dir { flex-direction: row; flex-wrap: wrap; }
+  .imovel-preco-box { width: 100%; }
+  .btn-ver-remax, .btn-pedir-info { flex: 1; }
+}
