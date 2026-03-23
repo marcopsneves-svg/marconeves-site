@@ -5,35 +5,57 @@ import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
 import './HomePage.css';
 
+const IMOVEIS_DESTAQUE = [
+  {
+    id: 1, tipo: 'T3', preco: '290 000 €', zona: 'Vila Franca de Xira',
+    area: '106 m²', quartos: 3, wc: 2, piso: '3.º Andar', elevador: true,
+    destaque: 'Perto do Hospital · Acesso A1',
+    desc: 'Apartamento luminoso com 3 quartos (1 suite), sala ampla e arrecadação. Excelente localização.',
+    link: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t3-lisboa-vila-franca-de-xira/121981557-1/T3RbJnx58b-pS-7i22K4xOJBO3b8_HBJ'
+  },
+  {
+    id: 2, tipo: 'T4', preco: '689 000 €', zona: 'Alverca do Ribatejo',
+    area: '180 m²', quartos: 4, wc: 3, piso: '6.º Andar', elevador: true,
+    destaque: '⬇️ Redução de preço · Garagem 4 carros',
+    desc: 'T4 na praça principal da Malvarosa. Duas frentes, luz natural todo o dia e garagem generosa.',
+    link: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t4-lisboa-vila-franca-de-xira/121981260-247/T3RbJnx58b-pS-7i22K4xK8WfJw08FDh'
+  },
+  {
+    id: 3, tipo: 'T3', preco: '545 000 €', zona: 'Alverca · Condomínio Plaza',
+    area: '169 m²', quartos: 3, wc: 3, piso: '3.º Andar', elevador: true,
+    destaque: 'Condomínio fechado · Piscina · Jardim',
+    desc: 'T3 em condomínio fechado com piscina, jardim e sala de festas. Varandas em todas as divisões.',
+    link: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t3-lisboa-vila-franca-de-xira/121981260-238/T3RbJnx58b-pS-7i22K4xKPwsPH975IZ'
+  },
+  {
+    id: 4, tipo: 'T2', preco: '685 000 €', zona: 'Parque das Nações · Lisboa',
+    area: '107 m²', quartos: 2, wc: 1, piso: '7.º Andar', elevador: true,
+    destaque: 'Vista rio · Parque das Nações',
+    desc: 'T2 no coração do Parque das Nações com vista de rio do 7.º andar. Cozinha equipada e estacionamento.',
+    link: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t2-lisboa-lisboa/121981260-236/T3RbJnx58b-pS-7i22K4xJPqJu-RucfW'
+  },
+];
+
 export default function HomePage() {
   return (
     <div className="home">
       <Navbar />
 
-      {/* HERO */}
+      {/* HERO - foto fundo completo */}
       <section className="hero">
-        <div className="hero-bg" />
+        <div className="hero-bg-foto">
+          <img src="/marco-camisa.jpg" alt="Marco Neves" />
+          <div className="hero-overlay" />
+        </div>
         <div className="hero-content">
-          <span className="hero-badge">RE/MAX Grupo Vantagem · Lisboa e Arredores</span>
+          <span className="hero-badge">RE/MAX Grupo Vantagem · Vila Franca de Xira</span>
           <h1 className="hero-title">Marco Neves</h1>
           <p className="hero-cargo">Consultor Imobiliário</p>
           <p className="hero-frase">"Confiança é o início...<br/>Resultados são o caminho"</p>
           <div className="hero-ctas">
-            <Link to="/avaliacao-gratuita" className="btn-primary">
-              Avaliação Gratuita
-            </Link>
-            <a
-              href="https://wa.me/351969692793?text=Olá%20Marco,%20vim%20do%20seu%20site%20e%20gostaria%20de%20mais%20informações."
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-secondary"
-            >
-              💬 WhatsApp
-            </a>
+            <Link to="/avaliacao-gratuita" className="btn-primary">Avaliação Gratuita</Link>
+            <a href="https://wa.me/351969692793?text=Olá%20Marco,%20vim%20do%20seu%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener noreferrer" className="btn-secondary">💬 WhatsApp</a>
           </div>
-        </div>
-        <div className="hero-foto-wrapper">
-          <img src="/marco-camisa.jpg" alt="Marco Neves" className="hero-foto" />
         </div>
         <div className="hero-scroll"><span>↓</span></div>
       </section>
@@ -60,6 +82,39 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* IMÓVEIS DESTAQUE */}
+      <section className="imoveis-destaque">
+        <div className="container">
+          <div className="section-label">Portfólio</div>
+          <div className="imoveis-header">
+            <h2 className="section-title">Imóveis em Destaque</h2>
+            <Link to="/imoveis" className="ver-todos">Ver todos →</Link>
+          </div>
+          <div className="imoveis-grid">
+            {IMOVEIS_DESTAQUE.map(im => (
+              <div className="imovel-card" key={im.id}>
+                <div className="imovel-card-top">
+                  <span className="imovel-tipo">{im.tipo}</span>
+                  <span className="imovel-preco">{im.preco}</span>
+                </div>
+                <div className="imovel-zona">📍 {im.zona}</div>
+                {im.destaque && <div className="imovel-badge">{im.destaque}</div>}
+                <p className="imovel-desc">{im.desc}</p>
+                <div className="imovel-specs">
+                  <span>🛏 {im.quartos} quartos</span>
+                  <span>🚿 {im.wc} WC</span>
+                  <span>📐 {im.area}</span>
+                  <span>🏢 {im.piso}</span>
+                </div>
+                <a href={im.link} target="_blank" rel="noopener noreferrer" className="imovel-btn">
+                  Ver imóvel completo →
+                </a>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* SOBRE */}
       <section className="sobre">
         <div className="container sobre-inner">
@@ -70,28 +125,12 @@ export default function HomePage() {
             <div className="section-label">Sobre mim</div>
             <h2 className="section-title">Marco Neves</h2>
             <p className="sobre-frase-destaque">"Confiança é o início... Resultados são o caminho"</p>
-            <p>
-              Consultor imobiliário certificado pela RE/MAX Grupo Vantagem, com vasta experiência
-              no mercado da Grande Lisboa. O meu trabalho assenta na confiança, no rigor e no
-              acompanhamento personalizado de cada cliente.
-            </p>
-            <p>
-              Seja para vender, comprar ou arrendar, estou disponível para guiar o processo
-              do início ao fim — com transparência e resultados reais.
-            </p>
+            <p>Consultor imobiliário certificado pela RE/MAX Grupo Vantagem, com vasta experiência no mercado da Grande Lisboa. O meu trabalho assenta na confiança, no rigor e no acompanhamento personalizado de cada cliente.</p>
+            <p>Seja para vender, comprar ou arrendar, estou disponível para guiar o processo do início ao fim — com transparência e resultados reais.</p>
             <div className="sobre-stats">
-              <div className="stat">
-                <span className="stat-num">+100</span>
-                <span className="stat-label">Imóveis vendidos</span>
-              </div>
-              <div className="stat">
-                <span className="stat-num">+8</span>
-                <span className="stat-label">Anos de experiência</span>
-              </div>
-              <div className="stat">
-                <span className="stat-num">5★</span>
-                <span className="stat-label">Avaliação clientes</span>
-              </div>
+              <div className="stat"><span className="stat-num">+100</span><span className="stat-label">Imóveis vendidos</span></div>
+              <div className="stat"><span className="stat-num">+8</span><span className="stat-label">Anos de experiência</span></div>
+              <div className="stat"><span className="stat-num">5★</span><span className="stat-label">Avaliação clientes</span></div>
             </div>
             <div className="sobre-contactos">
               <a href="tel:+351969692793">📞 +351 969 692 793</a>
@@ -101,14 +140,10 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* FORMULÁRIO CTA */}
+      {/* FORMULÁRIO */}
       <section className="cta-form">
         <div className="container">
-          <LeadForm
-            tipo="avaliacao"
-            titulo="Pede a tua avaliação gratuita"
-            subtitulo="Preenche o formulário e entro em contacto nas próximas 24 horas."
-          />
+          <LeadForm tipo="avaliacao" titulo="Pede a tua avaliação gratuita" subtitulo="Preenche o formulário e entro em contacto nas próximas 24 horas." />
         </div>
       </section>
 
@@ -126,10 +161,7 @@ export default function HomePage() {
               <div className="testemunho" key={i}>
                 <div className="stars">★★★★★</div>
                 <p>"{t.texto}"</p>
-                <div className="testemunho-autor">
-                  <strong>{t.nome}</strong>
-                  <span>{t.local}</span>
-                </div>
+                <div className="testemunho-autor"><strong>{t.nome}</strong><span>{t.local}</span></div>
               </div>
             ))}
           </div>
