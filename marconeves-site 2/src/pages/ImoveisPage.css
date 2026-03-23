@@ -1,196 +1,572 @@
-.imoveis-page { min-height: 100vh; }
-
-.imoveis-hero {
-  padding: 10rem 0 4rem;
-  text-align: center;
-  background: radial-gradient(ellipse at 50% 0%, rgba(216,12,33,0.08) 0%, transparent 60%);
-  border-bottom: 1px solid rgba(216,12,33,0.1);
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
-.imoveis-hero .section-label { display: block; margin-bottom: 1rem; }
-.imoveis-hero h1 { font-family: 'Montserrat', sans-serif; font-size: clamp(2rem,5vw,3.2rem); font-weight: 800; text-transform: uppercase; margin-bottom: 0.8rem; }
-.imoveis-hero p { color: var(--white-muted); font-size: 1rem; }
-
-.imoveis-body { padding: 4rem 0 6rem; }
-
-.filtros { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
-
-.filtro-btn {
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: var(--white-muted);
-  padding: 0.5rem 1.4rem;
-  border-radius: 30px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.82rem;
-  font-weight: 600;
-  cursor: pointer;
-  transition: all 0.2s;
-}
-
-.filtro-btn:hover, .filtro-btn.ativo {
-  background: var(--red);
-  border-color: var(--red);
-  color: var(--white);
-}
-
-.imoveis-lista { display: flex; flex-direction: column; gap: 1.5rem; }
-
-.imovel-item {
-  background: var(--dark-2);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-left: 4px solid var(--red);
-  border-radius: 6px;
-  padding: 2rem;
-  display: grid;
-  grid-template-columns: 1fr 220px;
-  gap: 2rem;
-  align-items: start;
-  transition: box-shadow 0.2s;
-}
-
-.imovel-item:hover { box-shadow: 0 8px 32px rgba(0,0,0,0.3); }
-
-.imovel-item-top { display: flex; gap: 0.6rem; flex-wrap: wrap; margin-bottom: 0.8rem; }
-
-.imovel-tipo-tag {
-  background: var(--red);
-  color: var(--white);
+.section-label {
   font-size: 0.7rem;
-  font-weight: 800;
-  letter-spacing: 0.1em;
-  padding: 0.2rem 0.8rem;
-  border-radius: 2px;
-}
-
-.imovel-destaque-tag {
-  background: rgba(216,12,33,0.1);
-  border: 1px solid rgba(216,12,33,0.3);
-  color: #ff8090;
-  font-size: 0.7rem;
-  font-weight: 600;
-  padding: 0.2rem 0.8rem;
-  border-radius: 20px;
-}
-
-.imovel-item h3 { font-family: 'Montserrat', sans-serif; font-size: 1.15rem; font-weight: 800; margin-bottom: 0.3rem; text-transform: uppercase; }
-
-.imovel-freguesia { font-size: 0.82rem; color: var(--white-muted); margin-bottom: 0.8rem; }
-
-.imovel-item-desc { font-size: 0.88rem; color: var(--white-muted); line-height: 1.65; margin-bottom: 1rem; }
-
-.imovel-item-specs { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem; }
-
-.imovel-item-specs span { font-size: 0.75rem; color: var(--white-muted); background: rgba(255,255,255,0.05); padding: 0.25rem 0.6rem; border-radius: 3px; }
-
-.imovel-ref { font-size: 0.7rem; color: rgba(168,180,196,0.4); }
-
-.imovel-item-dir { display: flex; flex-direction: column; gap: 0.8rem; }
-
-.imovel-preco-box { display: flex; flex-direction: column; gap: 0.2rem; }
-
-.preco-antigo { font-size: 0.85rem; color: rgba(168,180,196,0.4); text-decoration: line-through; }
-
-.preco-atual { font-family: 'Montserrat', sans-serif; font-size: 1.5rem; font-weight: 800; color: var(--white); }
-
-.btn-ver-remax {
-  display: block;
-  text-align: center;
-  background: var(--blue-mid);
-  border: 1px solid rgba(255,255,255,0.15);
-  color: var(--white);
-  padding: 0.75rem;
-  border-radius: 4px;
-  font-size: 0.82rem;
-  font-weight: 600;
-  transition: all 0.2s;
-}
-.btn-ver-remax:hover { border-color: var(--white); }
-
-.btn-pedir-info {
-  display: block;
-  width: 100%;
-  text-align: center;
-  background: var(--red);
-  color: var(--white);
-  padding: 0.75rem;
-  border-radius: 4px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 0.82rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.8rem;
   font-weight: 700;
-  cursor: pointer;
-  transition: background 0.2s;
-  border: none;
-}
-.btn-pedir-info:hover { background: var(--red-light); }
-
-.imoveis-cta {
-  margin-top: 3rem;
-  text-align: center;
-  padding: 2.5rem;
-  background: var(--dark-2);
-  border-radius: 6px;
-  border: 1px solid rgba(216,12,33,0.2);
 }
 
-.imoveis-cta p { color: var(--white-muted); font-size: 0.9rem; margin-bottom: 1rem; }
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 2.5rem;
+  color: var(--white);
+}
 
-.imoveis-cta a {
+/* HERO */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: linear-gradient(135deg, var(--dark) 0%, var(--blue) 60%, var(--blue-mid) 100%);
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse at 80% 50%, rgba(216,12,33,0.08) 0%, transparent 50%),
+    radial-gradient(ellipse at 10% 80%, rgba(14,64,128,0.4) 0%, transparent 50%);
+}
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+  background-size: 60px 60px;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding: 8rem 2rem 4rem 8vw;
+  max-width: 600px;
+  animation: fadeUp 0.8s ease both;
+}
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-badge {
   display: inline-block;
-  background: #25D366;
-  color: #fff;
-  padding: 0.85rem 2rem;
-  border-radius: 4px;
+  border: 1px solid rgba(216,12,33,0.5);
+  color: var(--red);
+  background: rgba(216,12,33,0.08);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(3rem, 6vw, 5.5rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+.hero-cargo {
+  font-size: 1rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--white-muted);
+  margin-bottom: 2rem;
+  font-weight: 400;
+}
+
+.hero-frase {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(1.1rem, 2vw, 1.4rem);
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+  font-weight: 400;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary {
+  background: var(--red);
+  color: var(--white);
+  padding: 1rem 2.2rem;
+  border-radius: 3px;
   font-weight: 700;
   font-size: 0.9rem;
-  transition: background 0.2s;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: all 0.2s;
 }
-.imoveis-cta a:hover { background: #1ebe5a; }
 
-/* MODAL */
-.modal-overlay {
-  position: fixed;
-  inset: 0;
-  background: rgba(0,0,0,0.8);
-  z-index: 1000;
+.btn-primary:hover {
+  background: var(--red-light);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(216,12,33,0.3);
+}
+
+.btn-secondary {
+  border: 2px solid rgba(255,255,255,0.3);
+  color: var(--white);
+  padding: 1rem 2.2rem;
+  border-radius: 3px;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: all 0.2s;
+}
+
+.btn-secondary:hover {
+  border-color: #25D366;
+  color: #25D366;
+}
+
+.hero-foto-wrapper {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  height: 95%;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+}
+
+.hero-foto {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  object-position: top center;
+  mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 60%, transparent 100%),
+              linear-gradient(to top, transparent 0%, black 15%);
+  mask-composite: intersect;
+  -webkit-mask-image: linear-gradient(to left, rgba(0,0,0,0.9) 60%, transparent 100%),
+                      linear-gradient(to top, transparent 0%, black 15%);
+  -webkit-mask-composite: source-in;
+  opacity: 0.85;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--red);
+  animation: bounce 2s ease infinite;
+  font-size: 1.2rem;
+  z-index: 2;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(8px); }
+}
+
+/* SERVIÃ‡OS */
+.servicos {
+  padding: 8rem 0;
+  background: var(--dark-2);
+}
+
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.5rem;
+}
+
+.servico-card {
+  background: var(--dark-3);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-left: 3px solid var(--red);
+  border-radius: 4px;
+  padding: 2rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.servico-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.servico-icon { font-size: 2rem; margin-bottom: 1rem; }
+
+.servico-card h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.servico-card p { color: var(--white-muted); font-size: 0.9rem; line-height: 1.65; }
+
+/* SOBRE */
+.sobre {
+  padding: 8rem 0;
+  background: var(--blue);
+}
+
+.sobre-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+.sobre-img {
+  width: 100%;
+  border-radius: 4px;
+  object-fit: cover;
+  aspect-ratio: 3/4;
+  border: 3px solid rgba(216,12,33,0.3);
+  box-shadow: 0 24px 64px rgba(0,0,0,0.4);
+}
+
+.sobre-frase-destaque {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.15rem;
+  color: rgba(255,255,255,0.6);
+  margin-bottom: 1.5rem;
+  font-style: normal;
+}
+
+.sobre-texto p {
+  color: var(--white-muted);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 1.2rem;
+}
+
+.sobre-stats {
+  display: flex;
+  gap: 2.5rem;
+  margin: 2.5rem 0;
+  padding: 1.5rem 0;
+  border-top: 1px solid rgba(255,255,255,0.08);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.stat { display: flex; flex-direction: column; gap: 0.2rem; }
+
+.stat-num {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2rem;
+  color: var(--red);
+  font-weight: 800;
+}
+
+.stat-label { font-size: 0.75rem; color: var(--white-muted); letter-spacing: 0.06em; }
+
+.sobre-contactos { display: flex; flex-direction: column; gap: 0.6rem; }
+
+.sobre-contactos a {
+  color: var(--white-muted);
+  font-size: 0.9rem;
+  transition: color 0.2s;
+}
+.sobre-contactos a:hover { color: var(--white); }
+
+/* CTA FORM */
+.cta-form {
+  padding: 8rem 0;
+  background: var(--dark-2);
+}
+
+/* TESTEMUNHOS */
+.testemunhos {
+  padding: 8rem 0;
+  background: var(--dark);
+}
+
+.testemunhos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.testemunho {
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-top: 3px solid var(--red);
+  border-radius: 4px;
+  padding: 2rem;
+}
+
+.stars { color: #f5a623; margin-bottom: 1rem; letter-spacing: 2px; }
+
+.testemunho p {
+  color: var(--white-muted);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  font-style: italic;
+  margin-bottom: 1.5rem;
+}
+
+.testemunho-autor { display: flex; flex-direction: column; gap: 0.2rem; }
+.testemunho-autor strong { font-size: 0.9rem; font-weight: 700; }
+.testemunho-autor span { font-size: 0.78rem; color: var(--white-muted); }
+
+@media (max-width: 900px) {
+  .hero-foto-wrapper { display: none; }
+  .hero-content { padding: 8rem 2rem 4rem; max-width: 100%; }
+  .sobre-inner { grid-template-columns: 1fr; gap: 3rem; }
+  .sobre-foto { order: -1; }
+  .sobre-img { aspect-ratio: 4/3; }
+  .sobre-stats { gap: 1.5rem; }
+}
+
+/* â”€â”€ HERO NOVO - FOTO FUNDO COMPLETO â”€â”€ */
+.hero {
+  position: relative;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 2rem;
+  overflow: hidden;
 }
 
-.modal-box {
-  background: var(--blue);
-  border-radius: 12px;
-  padding: 2.5rem;
-  max-width: 560px;
-  width: 100%;
-  position: relative;
-  max-height: 90vh;
-  overflow-y: auto;
-  border-top: 4px solid var(--red);
-}
-
-.modal-fechar {
+.hero-bg-foto {
   position: absolute;
-  top: 1rem; right: 1rem;
-  background: none;
-  border: none;
-  color: var(--white-muted);
+  inset: 0;
+  z-index: 0;
+}
+
+.hero-bg-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(2, 13, 26, 0.85) 0%,
+    rgba(5, 29, 64, 0.75) 50%,
+    rgba(2, 13, 26, 0.6) 100%
+  );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 8rem 2rem 4rem;
+  max-width: 700px;
+  animation: fadeUp 0.8s ease both;
+}
+
+.hero-badge {
+  display: inline-block;
+  border: 1px solid rgba(216,12,33,0.5);
+  color: #ff8090;
+  background: rgba(216,12,33,0.1);
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  padding: 0.4rem 1.2rem;
+  border-radius: 2px;
+  margin-bottom: 1.5rem;
+  font-weight: 600;
+}
+
+.hero-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: clamp(3rem, 8vw, 6rem);
+  font-weight: 800;
+  line-height: 1;
+  margin-bottom: 0.3rem;
+  color: var(--white);
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  text-shadow: 0 4px 24px rgba(0,0,0,0.4);
+}
+
+.hero-cargo {
+  font-size: 0.95rem;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.7);
+  margin-bottom: 1.8rem;
+  font-weight: 400;
+}
+
+.hero-frase {
+  font-family: 'Pacifico', cursive;
+  font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+  color: rgba(255,255,255,0.65);
+  margin-bottom: 2.5rem;
+  line-height: 1.5;
+}
+
+.hero-ctas {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero-scroll {
+  position: absolute;
+  bottom: 2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  color: var(--red);
+  animation: bounce 2s ease infinite;
   font-size: 1.2rem;
-  cursor: pointer;
-  padding: 0.3rem 0.6rem;
-  transition: color 0.2s;
+  z-index: 2;
 }
-.modal-fechar:hover { color: var(--white); }
 
-.modal-box h3 { font-family: 'Montserrat', sans-serif; font-size: 1.2rem; font-weight: 800; text-transform: uppercase; margin-bottom: 0.3rem; }
-
-.modal-imovel-nome { font-size: 0.85rem; color: var(--red); margin-bottom: 1.5rem; font-weight: 600; }
-
-@media (max-width: 768px) {
-  .imovel-item { grid-template-columns: 1fr; }
-  .imovel-item-dir { flex-direction: row; flex-wrap: wrap; }
-  .imovel-preco-box { width: 100%; }
-  .btn-ver-remax, .btn-pedir-info { flex: 1; }
+/* â”€â”€ IMÃ“VEIS DESTAQUE â”€â”€ */
+.imoveis-destaque {
+  padding: 8rem 0;
+  background: var(--blue);
 }
+
+.imoveis-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0;
+}
+
+.imoveis-header .section-title { margin-bottom: 2.5rem; }
+
+.ver-todos {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--red);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  transition: opacity 0.2s;
+  white-space: nowrap;
+  margin-bottom: 2.5rem;
+}
+
+.ver-todos:hover { opacity: 0.7; }
+
+.imoveis-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.imovel-card {
+  background: var(--dark-2);
+  border: 1px solid rgba(255,255,255,0.06);
+  border-top: 3px solid var(--red);
+  border-radius: 6px;
+  padding: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.imovel-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 32px rgba(0,0,0,0.3);
+}
+
+.imovel-card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.imovel-tipo {
+  background: var(--red);
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  padding: 0.25rem 0.8rem;
+  border-radius: 2px;
+}
+
+.imovel-preco {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.2rem;
+  font-weight: 800;
+  color: var(--white);
+}
+
+.imovel-zona {
+  font-size: 0.82rem;
+  color: var(--white-muted);
+  font-weight: 500;
+}
+
+.imovel-badge {
+  background: rgba(216,12,33,0.1);
+  border: 1px solid rgba(216,12,33,0.3);
+  color: #ff8090;
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.3rem 0.8rem;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.imovel-desc {
+  font-size: 0.85rem;
+  color: var(--white-muted);
+  line-height: 1.6;
+  flex: 1;
+}
+
+.imovel-specs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.imovel-specs span {
+  font-size: 0.75rem;
+  color: var(--white-muted);
+  background: rgba(255,255,255,0.05);
+  padding: 0.25rem 0.6rem;
+  border-radius: 3px;
+}
+
+.imovel-btn {
+  display: block;
+  text-align: center;
+  background: var(--red);
+  color: var(--white);
+  padding: 0.75rem;
+  border-radius: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  transition: background 0.2s;
+  margin-top: 0.4rem;
+}
+
+.imovel-btn:hover { background: var(--red-light); }
