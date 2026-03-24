@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
@@ -6,7 +7,7 @@ import './ImoveisPage.css';
 
 const IMOVEIS = [
   {
-    id: 1, tipo: 'T3', preco: '290 000 €', zona: 'Vila Franca de Xira', freguesia: 'Povos',
+    id: 1, slug: 't3-povos', tipo: 'T3', preco: '290 000 €', zona: 'Vila Franca de Xira', freguesia: 'Povos',
     area: '106 m²', quartos: 3, wc: 2, piso: '3.º Andar', elevador: true, estacionamento: 'Não',
     ano: 2003, energia: 'D',
     destaque: 'Perto do Hospital · Acesso A1',
@@ -15,7 +16,7 @@ const IMOVEIS = [
     ref: '121981557-1'
   },
   {
-    id: 2, tipo: 'T4', preco: '689 000 €', precoAnterior: '699 000 €', zona: 'Alverca do Ribatejo', freguesia: 'Malvarosa',
+    id: 2, slug: 't4-malvarosa', tipo: 'T4', preco: '689 000 €', precoAnterior: '699 000 €', zona: 'Alverca do Ribatejo', freguesia: 'Malvarosa',
     area: '180 m²', quartos: 4, wc: 3, piso: '6.º Andar', elevador: true, estacionamento: '3+ lugares',
     ano: 2007, energia: 'C',
     destaque: '⬇️ Redução de preço · Garagem 4 carros',
@@ -24,7 +25,7 @@ const IMOVEIS = [
     ref: '121981260-247'
   },
   {
-    id: 3, tipo: 'T3', preco: '545 000 €', zona: 'Alverca do Ribatejo', freguesia: 'Condomínio Plaza · Malvarosa',
+    id: 3, slug: 't3-malvarosa-plaza', tipo: 'T3', preco: '545 000 €', zona: 'Alverca do Ribatejo', freguesia: 'Condomínio Plaza · Malvarosa',
     area: '169 m²', quartos: 3, wc: 3, piso: '3.º Andar', elevador: true, estacionamento: '2 lugares',
     ano: 2010, energia: 'B',
     destaque: 'Condomínio fechado · Piscina · Jardim',
@@ -33,7 +34,7 @@ const IMOVEIS = [
     ref: '121981260-238'
   },
   {
-    id: 4, tipo: 'T2', preco: '685 000 €', zona: 'Lisboa', freguesia: 'Parque das Nações',
+    id: 4, slug: 't2-parque-nacoes', tipo: 'T2', preco: '685 000 €', zona: 'Lisboa', freguesia: 'Parque das Nações',
     area: '107 m²', quartos: 2, wc: 1, piso: '7.º Andar', elevador: true, estacionamento: '1 lugar',
     ano: 2009, energia: 'C',
     destaque: 'Vista rio · Parque das Nações',
