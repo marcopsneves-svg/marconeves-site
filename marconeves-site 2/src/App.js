@@ -5,6 +5,7 @@ import AvaliacaoPage from './pages/AvaliacaoPage';
 import ContactoPage from './pages/ContactoPage';
 import CartaoPage from './pages/CartaoPage';
 import ImoveisPage from './pages/ImoveisPage';
+import ImovelPage from './pages/ImovelPage';
 import BlogPage from './pages/BlogPage';
 import ArtigoPage from './pages/ArtigoPage';
 
@@ -17,6 +18,7 @@ function App() {
         <Route path="/contacto" element={<ContactoPage />} />
         <Route path="/cartao" element={<CartaoPage />} />
         <Route path="/imoveis" element={<ImoveisPage />} />
+        <Route path="/imoveis/:slug" element={<ImovelPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<ArtigoPage />} />
       </Routes>
@@ -24,4 +26,5 @@ function App() {
   );
 }
 
+export default App;
 export default App;
