@@ -296,6 +296,7 @@ export default function ImovelPage() {
 
             {/* Formulário */}
             <div className="sidebar-form">
+              <p className="sidebar-form-titulo">Pedir Informações</p>
               <LeadForm
                 tipo={`imovel-${im.ref}`}
                 titulo="Pedir informações"
