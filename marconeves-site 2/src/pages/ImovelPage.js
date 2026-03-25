@@ -29,7 +29,7 @@ A localização é outro dos grandes pontos fortes: a apenas 2 minutos do Hospit
     caracteristicas: ['3 Quartos (1 suite)', '2 Casas de banho', 'Sala ampla', 'Cozinha funcional', 'Arrecadação 12 m²', 'Elevador', 'Roupeiros embutidos', 'Boa luminosidade'],
     remax: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t3-lisboa-vila-franca-de-xira/121981557-1/T3RbJnx58b-pS-7i22K4xOJBO3b8_HBJ',
     pasta: 't3-povos',
-    numFotos: 22,
+    numFotos: 4,
   },
   't4-malvarosa': {
     titulo: 'Apartamento T4 em Alverca do Ribatejo',
@@ -51,7 +51,7 @@ A localização permite fazer a maioria das tarefas a pé, poupando tempo e simp
     caracteristicas: ['4 Quartos', '3 Casas de banho', '180 m² área útil', '80 m² área dependente', 'Garagem 4 carros', 'Duas frentes', 'Luz natural todo o dia', 'Localização central'],
     remax: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t4-lisboa-vila-franca-de-xira/121981260-247/T3RbJnx58b-pS-7i22K4xK8WfJw08FDh',
     pasta: 't4-malvarosa',
-    numFotos: 46,
+    numFotos: 4,
   },
   't3-malvarosa-plaza': {
     titulo: 'Apartamento T3 · Condomínio Plaza',
@@ -74,7 +74,7 @@ Viver aqui é mais do que estar na Malvarosa — é estar no único condomínio 
     caracteristicas: ['3 Quartos (1 suite com closet)', '3 Casas de banho', 'Sala 40 m²', 'Varandas em todas as divisões', '2 Garagens individuais', 'Piscina', 'Jardim privativo', 'Sala de festas', 'Comboio a 2 km'],
     remax: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t3-lisboa-vila-franca-de-xira/121981260-238/T3RbJnx58b-pS-7i22K4xKPwsPH975IZ',
     pasta: 't3-malvarosa-plaza',
-    numFotos: 28,
+    numFotos: 4,
   },
   't2-parque-nacoes': {
     titulo: 'Apartamento T2 · Parque das Nações',
@@ -97,7 +97,7 @@ Rodeado de escolas, supermercados e serviços, este é o ponto onde a conveniên
     caracteristicas: ['2 Quartos', '1 Casa de banho', 'Vista de rio do 7.º andar', 'Varanda fechada na cozinha', 'Cozinha totalmente equipada', 'Estacionamento incluído', 'Zona premium Lisboa', 'Próximo de escolas e serviços'],
     remax: 'https://www.remax.pt/pt/imoveis/venda-apartamento-t2-lisboa-lisboa/121981260-236/T3RbJnx58b-pS-7i22K4xJPqJu-RucfW',
     pasta: 't2-parque-nacoes',
-    numFotos: 34,
+    numFotos: 4,
   },
 };
 
