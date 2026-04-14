@@ -40,8 +40,8 @@ export default function ReferenciasPage() {
 
       if (r.ok) {
         setEstado('sucesso');
-        if (window.fbq) { fbq('track', 'Lead'); }
-        if (window.dataLayer) { dataLayer.push({ event: 'referencia_enviada' }); }
+        if (window.fbq) { window.fbq('track', 'Lead'); }
+        if (window.dataLayer) { window.dataLayer.push({ event: 'referencia_enviada' }); }
 
         setTimeout(() => {
           const msg = encodeURIComponent(
@@ -328,4 +328,4 @@ export default function ReferenciasPage() {
       <Footer />
     </div>
   );
-} 
+}
