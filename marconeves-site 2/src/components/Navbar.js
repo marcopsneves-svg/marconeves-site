@@ -22,15 +22,23 @@ export default function Navbar() {
           <span className="logo-remax-text">RE/MAX</span>
           <span className="logo-vantagem-text">Grupo Vantagem</span>
         </Link>
-        <button className={`hamburger ${menuOpen ? 'open' : ''}`} onClick={() => setMenuOpen(!menuOpen)} aria-label="Menu">
+
+        <button
+          className={`hamburger ${menuOpen ? 'open' : ''}`}
+          onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Menu"
+        >
           <span /><span /><span />
         </button>
+
         <div className={`navbar-links ${menuOpen ? 'open' : ''}`}>
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Início</Link>
-          <Link to="/imoveis" className={location.pathname === '/imoveis' ? 'active' : ''}>Imóveis</Link>
+          <Link to="/imoveis" className={location.pathname.startsWith('/imoveis') ? 'active' : ''}>Imóveis</Link>
           <Link to="/avaliacao-gratuita" className={location.pathname === '/avaliacao-gratuita' ? 'active' : ''}>Avaliação</Link>
           <Link to="/blog" className={location.pathname.startsWith('/blog') ? 'active' : ''}>Blog</Link>
-          <Link to="/contacto" className={location.pathname === '/contacto' ? 'active' : ''}>Contacto</Link>
+          <Link to="/referencias" className={`btn-referencias ${location.pathname === '/referencias' ? 'active' : ''}`}>
+            🤝 Ganha 300€
+          </Link>
           <Link to="/cartao" className="btn-cartao">Cartão Digital</Link>
         </div>
       </div>
