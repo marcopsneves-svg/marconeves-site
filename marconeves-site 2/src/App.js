@@ -8,6 +8,7 @@ import ImoveisPage from './pages/ImoveisPage';
 import ImovelPage from './pages/ImovelPage';
 import BlogPage from './pages/BlogPage';
 import ArtigoPage from './pages/ArtigoPage';
+import ReferenciasPage from './pages/ReferenciasPage';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/imoveis/:slug" element={<ImovelPage />} />
         <Route path="/blog" element={<BlogPage />} />
         <Route path="/blog/:slug" element={<ArtigoPage />} />
+        <Route path="/referencias" element={<ReferenciasPage />} />
       </Routes>
     </Router>
   );
