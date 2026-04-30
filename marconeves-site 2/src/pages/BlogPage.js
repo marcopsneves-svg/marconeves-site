@@ -112,7 +112,7 @@ A isenção é processada na declaração Modelo 1 de IMT, normalmente tratada p
 
 ## O meu papel neste processo
 
-Como intermediário de crédito certificado e consultor RE/MAX, acompanho clientes jovens em todo este processo — da avaliação do imóvel, à preparação da documentação, à ligação com o banco. Garantir que aproveitam todos os apoios disponíveis faz parte do serviço.
+Com uma equipa de intermediários de crédito a trabalhar comigo e eu, como consultor RE/MAX, acompanho clientes jovens em todo este processo — da avaliação do imóvel, à preparação da documentação, à ligação com o banco. Garantir que aproveitam todos os apoios disponíveis faz parte do serviço.
 
 ---
 
