@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const FOTO = 'https://www.marconevesimobiliario.com/images/marco-camisa.jpg';
+const FOTO = 'public/marco-camisa.jpg';
 
 function FormAvaliacao({ concelho }) {
   const [form, setForm] = useState({ nome: '', telefone: '', email: '', morada: '', tipo: 'Apartamento', mensagem: '' });
