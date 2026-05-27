@@ -10,6 +10,11 @@ import BlogPage from './pages/BlogPage';
 import ArtigoPage from './pages/ArtigoPage';
 import ReferenciasPage from './pages/ReferenciasPage';
 import DossierPage from './pages/DossierPage';
+import LouresPage from './pages/LouresPage';
+import MafraPage from './pages/MafraPage';
+import AlenquerPage from './pages/AlenquerPage';
+import BenaventePage from './pages/BenaventePage';
+import VilaFrancaPage from './pages/VilaFrancaPage';
 
 function App() {
   return (
@@ -25,9 +30,15 @@ function App() {
         <Route path="/blog/:slug" element={<ArtigoPage />} />
         <Route path="/referencias" element={<ReferenciasPage />} />
         <Route path="/vender" element={<DossierPage />} />
+        <Route path="/loures" element={<LouresPage />} />
+        <Route path="/mafra" element={<MafraPage />} />
+        <Route path="/alenquer" element={<AlenquerPage />} />
+        <Route path="/benavente" element={<BenaventePage />} />
+        <Route path="/vila-franca-de-xira" element={<VilaFrancaPage />} />
       </Routes>
     </Router>
   );
 }
 
 export default App;
+
