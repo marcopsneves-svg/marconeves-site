@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-const FOTO = '/images/marco-camisa.jpg';
+const FOTO = '/marco-camisa.jpg';
 function FormAvaliacao({ concelho }) {
   const [form, setForm] = useState({ nome:'', telefone:'', email:'', morada:'', tipo:'Apartamento', mensagem:'' });
   const [enviado, setEnviado] = useState(false);
