@@ -540,6 +540,245 @@ Faço uma avaliação rigorosa baseada em transações reais e recentes na zona 
 **Tem um imóvel para vender em Alenquer?** Faço uma avaliação gratuita e desenho consigo a estratégia certa para o seu caso. Entre em contacto comigo.
     `
   },
+  {
+    slug: 'benavente-vale-a-pena-analise-mercado',
+    titulo: 'Benavente Vale a Pena? Análise de Mercado Imobiliário',
+    resumo: 'Benavente está a tornar-se uma das apostas mais inteligentes na margem sul do Tejo. Veja os números reais, as vantagens do concelho e se realmente vale a pena comprar ou investir aqui em 2026.',
+    data: '3 de Junho de 2026',
+    leitura: '6 min',
+    categoria: 'Investir',
+    cor: '#0a3166',
+    conteudo: `
+## Benavente: a pergunta que todos fazem
+
+"Vale a pena comprar em Benavente?" É a pergunta que mais ouço de clientes que comparam este concelho com Vila Franca de Xira ou com a margem norte do Tejo. A resposta, com base nos números reais de 2026, é claramente sim — para o perfil certo de comprador.
+
+## Os números que importam
+
+Benavente continua a ser um dos concelhos com **melhor relação qualidade-preço** na Área Metropolitana de Lisboa, com valores entre **1.400€/m² e 2.100€/m²** — significativamente abaixo da margem norte do Tejo e de concelhos como Loures ou Vila Franca de Xira.
+
+O tempo médio de venda situa-se entre **60 e 120 dias**, mais longo do que em mercados mais aquecidos, o que reflete uma procura ainda em consolidação — mas também significa que quem compra agora pode beneficiar de uma valorização futura semelhante à que já aconteceu noutros concelhos da região.
+
+## Porque é que Benavente está a ganhar atenção
+
+**Localização estratégica**
+Situado na margem sul do Tejo, entre Lisboa e o Alentejo, com acesso pela A10 e pela ponte Marechal Carmona, o centro de Lisboa fica a menos de 40 minutos.
+
+**Espaço e tranquilidade**
+As moradias com terreno são a tipologia mais procurada — Benavente oferece o que Lisboa e os concelhos mais valorizados já não conseguem: espaço a preços acessíveis.
+
+**Natureza e qualidade de vida**
+A existência de zonas naturais protegidas e o acesso direto ao rio Tejo são argumentos que pesam cada vez mais para quem procura qualidade de vida e não só metros quadrados.
+
+**Localidades em crescimento**
+Samora Correia, Benavente (vila), Santo Estêvão e Barrosa têm registado procura crescente, cada uma com um perfil distinto — Samora Correia mais urbana, Barrosa e Santo Estêvão mais rurais.
+
+## Para quem é que Benavente faz sentido?
+
+Benavente não é o concelho certo para quem precisa de estar em Lisboa todos os dias com deslocações rápidas e sem trânsito. Mas é uma excelente opção para:
+
+→ Famílias que trabalham em regime híbrido e valorizam espaço sobre proximidade absoluta
+
+→ Investidores que procuram entrada num mercado ainda com margem de valorização
+
+→ Quem procura moradia com terreno a um preço impossível de encontrar mais perto de Lisboa
+
+→ Reformados ou pré-reformados que procuram tranquilidade e qualidade de vida
+
+## Os riscos a ter em conta
+
+Sendo um mercado com ciclo de venda mais longo, comprar em Benavente exige paciência — tanto na compra (pode haver menos oferta de qualidade disponível num dado momento) como na eventual revenda futura. A liquidez é menor do que em mercados mais dinâmicos.
+
+## A minha avaliação como consultor
+
+Benavente vale a pena para quem entende o concelho como um investimento de médio-longo prazo, não como uma compra especulativa de curto prazo. A combinação de preços ainda competitivos, qualidade de vida e crescimento sustentado da procura cria condições reais de valorização nos próximos anos — mas sem garantias de retorno rápido.
+
+---
+
+**Está a considerar comprar ou investir em Benavente?** Faço uma análise personalizada à sua situação e objetivos. Entre em contacto comigo — sem custos.
+    `
+  },
+  {
+    slug: 'imt-imposto-selo-mais-valias-2026-o-que-vais-pagar',
+    titulo: 'IMT, IS e Mais-Valias: O Que Vais Pagar Quando Vendes',
+    resumo: 'Vender uma casa em 2026 envolve impostos que muitos proprietários só descobrem tarde demais. Explico de forma simples o que vai pagar de Imposto do Selo e mais-valias — e como pode reduzir ou eliminar legalmente esse imposto.',
+    data: '3 de Junho de 2026',
+    leitura: '8 min',
+    categoria: 'Vender',
+    cor: '#d80c21',
+    conteudo: `
+## Quem vende também paga impostos
+
+Há uma confusão comum: muita gente associa o IMT apenas a quem compra. É verdade — o IMT é pago pelo comprador, não pelo vendedor. Mas quem vende não fica isento de impostos: entra em jogo o **imposto sobre mais-valias**, que pode ter um impacto real no que efetivamente recebe pela venda.
+
+## O que são mais-valias imobiliárias
+
+A mais-valia é o ganho obtido com a venda de um imóvel — a diferença entre o valor de venda e o valor pelo qual o imóvel foi adquirido, com alguns ajustes. Este ganho está sujeito a tributação em sede de IRS, regulado pelo artigo 10.º do Código do IRS.
+
+A fórmula base é:
+
+**Mais-Valia = Valor de Realização − (Valor de Aquisição × Coeficiente de Desvalorização) − Encargos com a Valorização − Despesas com a Venda**
+
+O coeficiente de desvalorização monetária atualiza o valor de aquisição em função da inflação acumulada desde a data de compra — o que normalmente reduz a mais-valia tributável, especialmente em imóveis comprados há muitos anos.
+
+## A regra mais importante: só 50% é tributado
+
+Para residentes em Portugal, apenas **50% do ganho** conta para efeitos de imposto. Esse valor soma-se aos restantes rendimentos do ano (salário, pensões, rendas) e é tributado pela taxa do escalão de IRS correspondente — não há uma taxa fixa única.
+
+## Que despesas pode deduzir
+
+Antes de calcular a mais-valia, pode deduzir:
+
+- **Despesas de aquisição**: IMT, Imposto do Selo, notário, escritura e registos pagos na altura da compra
+- **Obras de valorização**: realizadas nos últimos 12 anos, desde que tenha faturas em seu nome
+- **Encargos com a venda**: comissão da agência imobiliária e certificado energético
+
+Guardar todas estas faturas ao longo dos anos é, por isso, uma das recomendações mais valiosas que dou aos meus clientes — muitas vezes representa milhares de euros de diferença no imposto final.
+
+## A isenção mais importante: habitação própria e permanente
+
+Se o imóvel vendido era a sua habitação própria e permanente (HPP), pode ficar **totalmente isento** de imposto sobre mais-valias se reinvestir o produto da venda numa nova habitação própria e permanente no prazo de 36 meses.
+
+Há também a possibilidade de isenção se o reinvestimento for num plano de poupança-reforma (PPR), aplicável a partir dos 65 anos ou em situação de reforma, em determinadas condições.
+
+## Casos especiais que geram confusão
+
+**Imóveis herdados ou doados**
+Quando vende um imóvel recebido por herança ou doação, o valor de aquisição não é o que o falecido pagou — é o **Valor Patrimonial Tributário (VPT)** à data da transmissão, o mesmo que serviu de base ao Imposto do Selo na altura da herança. A data de aquisição é a data do óbito, e a partilha posterior não altera essa data.
+
+**Venda de quota-parte herdada**
+Se vende apenas a sua quota-parte de um imóvel herdado, o valor de aquisição considerado é proporcional à percentagem que lhe pertence.
+
+**Não residentes em Portugal**
+Quem reside fora de Portugal e vende um imóvel aqui já não está, em regra, sujeito à antiga taxa fixa de 28% sobre a totalidade do ganho — o regime aproximou-se do dos residentes.
+
+## Como e quando se declara
+
+A venda declara-se no **Anexo G** da declaração de IRS. Quem vende em 2025, declara em 2026, entre 1 de abril e 30 de junho. Quem vender em 2026, declarará entre abril e junho de 2027.
+
+## O erro mais caro que vejo repetidamente
+
+Usar um valor de aquisição errado — sobretudo em casos de herança — é o erro que mais inflaciona a mais-valia e leva a pagar imposto a mais sem necessidade. Confirmar este valor com um contabilista antes de vender pode poupar-lhe centenas ou milhares de euros.
+
+## O meu papel neste processo
+
+Embora a parte fiscal seja sempre tratada por um contabilista ou pela própria Autoridade Tributária, faço questão de alertar todos os meus clientes vendedores para este tema desde o início do processo — para que possam preparar documentação, recolher faturas de obras e planear eventual reinvestimento com tempo, em vez de descobrir tudo isto já depois da escritura.
+
+---
+
+**Vai vender o seu imóvel e tem dúvidas sobre os impostos envolvidos?** Posso ajudá-lo a entender o processo e, se necessário, recomendar um contabilista de confiança. Entre em contacto comigo.
+    `
+  },
+  {
+    slug: 'preparar-casa-para-vender-sem-gastar-1000-euros',
+    titulo: 'Como Preparar a Tua Casa Para Vender (Sem Gastar 1000€)',
+    resumo: 'Não precisa de uma renovação completa para vender melhor e mais rápido. Estas são as intervenções de baixo custo que fazem a maior diferença na perceção de valor de um imóvel.',
+    data: '3 de Junho de 2026',
+    leitura: '5 min',
+    categoria: 'Vender',
+    cor: '#d80c21',
+    conteudo: `
+## O mito da "grande renovação" antes de vender
+
+Um dos enganos mais comuns entre proprietários é pensar que precisam de gastar 5.000€, 10.000€ ou mais em obras antes de pôr a casa à venda. Na maioria dos casos, isso é dinheiro mal investido — o retorno raramente compensa. O que faz mesmo diferença são intervenções pequenas, baratas, mas estrategicamente certas.
+
+## 1. Limpeza profunda (custo: 50€ a 150€)
+
+Parece óbvio, mas é o passo mais subestimado. Uma limpeza profissional profunda — vidros, rodapés, eletrodomésticos, casas de banho — muda completamente a primeira impressão de um imóvel. É, de longe, o investimento com melhor relação custo-benefício.
+
+## 2. Despersonalizar e organizar (custo: 0€)
+
+Retirar fotografias de família, objetos religiosos ou políticos, e excesso de decoração pessoal permite que o comprador se imagine a viver naquele espaço. Arrumar armários e reduzir o volume de objetos visíveis também aumenta a perceção de espaço — sem gastar nada.
+
+## 3. Pintura de paredes neutras (custo: 100€ a 300€ por divisão)
+
+Não é preciso pintar a casa toda. Foque-se nas paredes com cores fortes, manchas ou marcas visíveis. Tons neutros (branco, cinza claro, beige) agradam a mais compradores e fazem os espaços parecerem maiores e mais luminosos.
+
+## 4. Iluminação (custo: 30€ a 100€)
+
+Substituir lâmpadas fundidas ou amareladas por lâmpadas de luz branca/neutra em todos os espaços faz uma diferença imediata nas fotografias e nas visitas presenciais. Espaços bem iluminados parecem maiores e mais cuidados.
+
+## 5. Pequenas reparações visíveis (custo: 50€ a 200€)
+
+Uma torneira a pingar, uma porta que range, um puxador solto — são detalhes pequenos que, somados, comunicam "esta casa não foi cuidada". Resolver estes pormenores antes das visitas evita que o comprador comece a questionar o que mais pode estar mal.
+
+## 6. Exterior e entrada (custo: 0€ a 100€)
+
+A primeira impressão começa antes de entrar na casa. Limpar a entrada, cortar relva ou plantas, e garantir que a campainha e a fechadura funcionam bem custa pouco e tem impacto desproporcional na primeira impressão.
+
+## 7. Aromatização e ambiente (custo: 0€ a 30€)
+
+Ventilar bem a casa antes das visitas, eliminar odores (especialmente de animais ou tabaco), e criar um ambiente agradável (cortinas abertas, temperatura confortável) são detalhes que custam quase nada mas influenciam diretamente a decisão emocional do comprador.
+
+## O que NÃO vale a pena fazer
+
+Renovações estruturais, cozinhas ou casas de banho completas, ou mudanças de pavimento raramente recuperam o investimento na venda — a menos que o estado atual seja realmente um impedimento à venda. Nestes casos, é normalmente mais eficiente ajustar o preço de venda do que investir em obras profundas.
+
+## A minha recomendação prática
+
+Antes de qualquer imóvel ir para o mercado, faço sempre uma visita de avaliação onde identifico, em conjunto com o proprietário, que intervenções de baixo custo vão ter mais impacto no valor percebido — e quais não compensam o investimento. É um trabalho de poucas horas que pode significar vender mais rápido e por um valor mais próximo do pedido.
+
+---
+
+**Quer uma avaliação gratuita do seu imóvel, com recomendações práticas para o preparar para venda?** Entre em contacto comigo — sem custos.
+    `
+  },
+  {
+    slug: '3-perguntas-fazer-ao-teu-consultor-imobiliario',
+    titulo: 'As 3 Perguntas Que Tens de Fazer ao Teu Consultor Imobiliário',
+    resumo: 'Escolher o consultor certo pode significar a diferença entre vender bem e rápido, ou ficar meses com o imóvel parado. Estas são as 3 perguntas que todo o proprietário deveria fazer antes de assinar um contrato de mediação.',
+    data: '3 de Junho de 2026',
+    leitura: '5 min',
+    categoria: 'Vender',
+    cor: '#0a3166',
+    conteudo: `
+## A escolha do consultor importa mais do que parece
+
+Muitos proprietários escolhem consultor imobiliário com base em quem lhes prometeu o preço mais alto, ou em quem conheciam primeiro. É um erro caro. Estas são as 3 perguntas que recomendo fazer a qualquer consultor antes de assinar um contrato de mediação — e que respondo sempre com total transparência aos meus próprios clientes.
+
+## Pergunta 1: "Como chegou a este valor para o meu imóvel?"
+
+Esta é a pergunta mais importante de todas. Um consultor sério não dá um valor "de cabeça" ou baseado apenas no que o proprietário gostaria de ouvir.
+
+**O que deve esperar como resposta:**
+Um estudo comparativo de mercado, com imóveis semelhantes vendidos recentemente na mesma zona — não médias genéricas do concelho, mas transações reais e comparáveis em localização, tipologia e estado.
+
+**Sinal de alerta:**
+Se o consultor apresenta um valor significativamente mais alto do que os outros, sem justificação com dados concretos, é provavelmente uma tática para conseguir o contrato de mediação — não uma estimativa realista. Estes imóveis acabam, quase sempre, por baixar de preço meses depois, já com a imagem "queimada" no mercado.
+
+## Pergunta 2: "Qual é exatamente a sua estratégia de promoção?"
+
+Colocar o imóvel num portal e esperar não é estratégia — é esperança. Pergunte concretamente o que vai ser feito.
+
+**O que deve esperar como resposta:**
+Fotografia profissional, presença em portais relevantes, divulgação em redes sociais, acesso a uma base de compradores já qualificados, e, no caso de redes como a RE/MAX, distribuição através da rede de consultores e parceiros.
+
+**Sinal de alerta:**
+Respostas vagas como "vou divulgar o seu imóvel" sem detalhes concretos sobre canais, frequência ou método de qualificação de interessados.
+
+## Pergunta 3: "O que acontece se o imóvel não vender no prazo previsto?"
+
+Esta pergunta revela muito sobre a honestidade e profissionalismo do consultor.
+
+**O que deve esperar como resposta:**
+Uma explicação clara sobre o que será reavaliado — preço, fotografia, estratégia de divulgação — e disponibilidade para rever a abordagem com dados concretos sobre o feedback recebido nas visitas e contactos.
+
+**Sinal de alerta:**
+Se o consultor não tem um plano para esta situação, ou simplesmente diz "vai vender, não se preocupe", está a evitar uma conversa importante que deveria ter desde o início.
+
+## Bónus: pergunte sempre pela exclusividade
+
+Um contrato de mediação exclusivo, bem feito, normalmente traz melhores resultados do que ter o imóvel em várias agências em simultâneo — porque o consultor investe tempo e recursos reais, sabendo que tem o compromisso do proprietário. Pergunte ao seu consultor porque recomenda (ou não) a exclusividade, e exija que essa recomendação venha com argumentos, não apenas com interesse comercial.
+
+## Porque faço questão de responder a estas 3 perguntas sempre
+
+Antes de qualquer proprietário assinar comigo, explico sempre como cheguei ao valor proposto, qual é a estratégia concreta de promoção, e como vamos acompanhar e ajustar a estratégia se necessário. É este nível de transparência que, na minha experiência, gera confiança real — e resultados reais.
+
+---
+
+**Está a pensar vender e quer uma conversa transparente sobre o seu imóvel?** Faço uma avaliação gratuita e respondo a estas 3 perguntas (e a todas as outras que tiver) sem compromisso. Entre em contacto comigo.
+    `
+  },
 ];
 
 export default function BlogPage() {
