@@ -6,6 +6,15 @@ import './ImoveisPage.css';
 
 const IMOVEIS = [
   {
+    id: 5, slug: 't3-benavente-historica', tipo: 'T3', preco: '300 000 €',
+    zona: 'Benavente', freguesia: 'Centro Histórico',
+    area: '97 m²', quartos: 3, wc: 2, piso: 'Moradia 2 Pisos',
+    destaque: 'Terraço com vista Lezíria · A10 a 5 min · Suite',
+    desc: 'Moradia com carácter no coração histórico de Benavente. Terraço com vista desafogada para a Lezíria do Tejo. A ~35 min do Aeroporto de Lisboa.',
+    foto: '/imoveis/t3-benavente-historica/foto-fachada.jpg',
+    ref: 'MN-BNV-001', energia: 'D',
+  },
+  {
     id: 1, slug: 't3-povos', tipo: 'T3', preco: '290 000 €',
     zona: 'Vila Franca de Xira', freguesia: 'Povos',
     area: '106 m²', quartos: 3, wc: 2, piso: '3.º Andar',
