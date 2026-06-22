@@ -143,17 +143,17 @@ function Galeria({ pasta, numFotos }) {
 
   const fotos = pasta === 't3-benavente-historica'
     ? [
-        `/imoveis/${pasta}/foto-fachada.jpg`,
-        `/imoveis/${pasta}/foto-fachada2.jpg`,
-        `/imoveis/${pasta}/foto-sala.jpg`,
-        `/imoveis/${pasta}/foto-cozinha.jpg`,
-        `/imoveis/${pasta}/foto-quarto1.jpg`,
-        `/imoveis/${pasta}/foto-quarto2.jpg`,
-        `/imoveis/${pasta}/foto-quarto3.jpg`,
-        `/imoveis/${pasta}/foto-terraco.jpg`,
-        `/imoveis/${pasta}/foto-terraco2.jpg`,
-        `/imoveis/${pasta}/foto-benavente.jpg`,
-        `/imoveis/${pasta}/foto-aerea.jpg`,
+        `/imoveis/${pasta}/fot_fachada.jpg`,
+        `/imoveis/${pasta}/foto_fachada2.jpg`,
+        `/imoveis/${pasta}/foto_sala.png`,
+        `/imoveis/${pasta}/foto_cozinha.png`,
+        `/imoveis/${pasta}/foto_quarto1.png`,
+        `/imoveis/${pasta}/foto_quarto2.png`,
+        `/imoveis/${pasta}/foto_quarto3.png`,
+        `/imoveis/${pasta}/foto_terraco.png`,
+        `/imoveis/${pasta}/foto_terraco2.png`,
+        `/imoveis/${pasta}/foto_benavente.jpg`,
+        `/imoveis/${pasta}/foto_aerea.jpg`,
       ]
     : Array.from({ length: numFotos }, (_, i) => `/imoveis/${pasta}/foto-${i + 1}.jpg`);
 
@@ -326,7 +326,7 @@ export default function ImovelPage() {
               <Link to={`/imoveis/${s}`} key={s} className="outro-card">
                 <img
                   src={s === 't3-benavente-historica'
-                    ? `/imoveis/${i.pasta}/foto-fachada.jpg`
+                    ? `/imoveis/${i.pasta}/fot_fachada.jpg`
                     : `/imoveis/${i.pasta}/foto-1.jpg`}
                   alt={i.titulo}
                 />

@@ -11,7 +11,7 @@ const IMOVEIS = [
     area: '97 m²', quartos: 3, wc: 2, piso: 'Moradia 2 Pisos',
     destaque: 'Terraço com vista Lezíria · A10 a 5 min · Suite',
     desc: 'Moradia com carácter no coração histórico de Benavente. Terraço com vista desafogada para a Lezíria do Tejo. A ~35 min do Aeroporto de Lisboa.',
-    foto: '/imoveis/t3-benavente-historica/foto-fachada.jpg',
+    foto: '/imoveis/t3-benavente-historica/fot_fachada.jpg',
     ref: 'MN-BNV-001', energia: 'D',
   },
   {
