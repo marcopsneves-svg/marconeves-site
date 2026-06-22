@@ -6,6 +6,42 @@ import LeadForm from '../components/LeadForm';
 import './ImovelPage.css';
 
 const IMOVEIS_DADOS = {
+  't3-benavente-historica': {
+    titulo: 'Moradia T3 no Centro Histórico de Benavente',
+    subtitulo: 'Terraço com vista para a Lezíria · Centro Histórico · Benavente',
+    preco: '300 000 €',
+    tipo: 'T3', quartos: 3, wc: 2, area: '97 m²',
+    piso: 'Moradia 2 Pisos', elevador: false, estacionamento: 'Não', ano: null, energia: 'D',
+    ref: 'MN-BNV-001',
+    zona: 'Centro Histórico, Benavente',
+    destaque: 'Terraço com vista Lezíria · Suite · A10 a 5 min · Aeroporto a ~35 min',
+    descricao: `Uma moradia com carácter, localizada no coração histórico de Benavente — a metros da Câmara Municipal, do Largo Municipal e do Cineteatro.
+
+Dois pisos, 97 m², 3 quartos (um deles em suite), sala com lareira, cozinha equipada, 2 casas de banho e um terraço com vista desafogada para a Lezíria do Tejo.
+
+A casa dispõe de dois acessos independentes: entrada direta pela rua e uma segunda entrada pela cozinha — uma característica típica do casario histórico português.
+
+A 5 minutos da A10, quem aqui vive chega ao Aeroporto Humberto Delgado em aproximadamente 35 minutos. Lisboa está mais perto do que parece.
+
+Benavente oferece tudo o que uma família precisa: centro de saúde, rede escolar completa, comércio de proximidade, restaurantes com gastronomia ribatejana autêntica, Parque Ribeirinho do Sorraia, Cais da Vala Nova para desportos náuticos e um centro histórico com identidade própria.
+
+Qualidade de vida real. Sem abrir mão da cidade.`,
+    caracteristicas: [
+      '3 Quartos (1 suite com WC privativo)',
+      '2 Casas de banho',
+      'Sala com lareira',
+      'Cozinha equipada',
+      'Terraço com vista para a Lezíria do Tejo',
+      '2 entradas independentes',
+      'Moradia de 2 pisos',
+      'Centro histórico de Benavente',
+      'A10 a 5 minutos',
+      'Aeroporto de Lisboa a ~35 min',
+    ],
+    remax: 'https://www.remax.pt',
+    pasta: 't3-benavente-historica',
+    numFotos: 11,
+  },
   't3-povos': {
     titulo: 'Apartamento T3 em Vila Franca de Xira',
     subtitulo: 'Com elevador · Povos · Vila Franca de Xira',
@@ -104,38 +140,40 @@ Rodeado de escolas, supermercados e serviços, este é o ponto onde a conveniên
 function Galeria({ pasta, numFotos }) {
   const [fotoAtiva, setFotoAtiva] = useState(0);
   const [lightboxAberto, setLightboxAberto] = useState(false);
-  const fotos = Array.from({ length: numFotos }, (_, i) => `/imoveis/${pasta}/foto-${i + 1}.jpg`);
+
+  const fotos = pasta === 't3-benavente-historica'
+    ? [
+        `/imoveis/${pasta}/foto-fachada.jpg`,
+        `/imoveis/${pasta}/foto-fachada2.jpg`,
+        `/imoveis/${pasta}/foto-sala.jpg`,
+        `/imoveis/${pasta}/foto-cozinha.jpg`,
+        `/imoveis/${pasta}/foto-quarto1.jpg`,
+        `/imoveis/${pasta}/foto-quarto2.jpg`,
+        `/imoveis/${pasta}/foto-quarto3.jpg`,
+        `/imoveis/${pasta}/foto-terraco.jpg`,
+        `/imoveis/${pasta}/foto-terraco2.jpg`,
+        `/imoveis/${pasta}/foto-benavente.jpg`,
+        `/imoveis/${pasta}/foto-aerea.jpg`,
+      ]
+    : Array.from({ length: numFotos }, (_, i) => `/imoveis/${pasta}/foto-${i + 1}.jpg`);
 
   const anterior = () => setFotoAtiva(f => (f - 1 + fotos.length) % fotos.length);
   const proximo = () => setFotoAtiva(f => (f + 1) % fotos.length);
 
   return (
     <div className="galeria">
-      {/* Foto principal */}
       <div className="galeria-principal" onClick={() => setLightboxAberto(true)}>
         <img src={fotos[fotoAtiva]} alt={`Foto ${fotoAtiva + 1}`} />
-        <div className="galeria-overlay">
-          <span>🔍 Ver em grande</span>
-        </div>
+        <div className="galeria-overlay"><span>🔍 Ver em grande</span></div>
         <div className="galeria-contador">{fotoAtiva + 1} / {fotos.length}</div>
         <button className="galeria-nav galeria-nav-esq" onClick={e => { e.stopPropagation(); anterior(); }}>‹</button>
         <button className="galeria-nav galeria-nav-dir" onClick={e => { e.stopPropagation(); proximo(); }}>›</button>
       </div>
-
-      {/* Miniaturas */}
       <div className="galeria-thumbs">
         {fotos.map((f, i) => (
-          <img
-            key={i}
-            src={f}
-            alt={`Foto ${i + 1}`}
-            className={`thumb ${i === fotoAtiva ? 'ativa' : ''}`}
-            onClick={() => setFotoAtiva(i)}
-          />
+          <img key={i} src={f} alt={`Foto ${i + 1}`} className={`thumb ${i === fotoAtiva ? 'ativa' : ''}`} onClick={() => setFotoAtiva(i)} />
         ))}
       </div>
-
-      {/* Lightbox */}
       {lightboxAberto && (
         <div className="lightbox" onClick={() => setLightboxAberto(false)}>
           <button className="lightbox-fechar" onClick={() => setLightboxAberto(false)}>✕</button>
@@ -191,16 +229,13 @@ export default function ImovelPage() {
       <div className="imovel-body">
         <div className="container imovel-layout">
           <div className="imovel-esq">
-            {/* Galeria */}
             <Galeria pasta={im.pasta} numFotos={im.numFotos} />
 
-            {/* Descrição */}
             <div className="imovel-descricao">
               <h2>Descrição</h2>
               {im.descricao.split('\n\n').map((p, i) => <p key={i}>{p}</p>)}
             </div>
 
-            {/* Características */}
             <div className="imovel-caracteristicas">
               <h2>Características</h2>
               <div className="caract-grid">
@@ -213,44 +248,22 @@ export default function ImovelPage() {
               </div>
             </div>
 
-            {/* Partilhar */}
             <div className="imovel-partilhar">
               <h3>Partilhar este imóvel</h3>
               <div className="partilhar-btns">
-                <a
-                  href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlPartilha)}`}
-                  target="_blank" rel="noopener noreferrer"
-                  className="btn-partilha btn-fb"
-                >
+                <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(urlPartilha)}`} target="_blank" rel="noopener noreferrer" className="btn-partilha btn-fb">
                   <span>f</span> Facebook
                 </a>
-                <a
-                  href={`https://wa.me/?text=${textoPartilha}%20${encodeURIComponent(urlPartilha)}`}
-                  target="_blank" rel="noopener noreferrer"
-                  className="btn-partilha btn-wa"
-                >
+                <a href={`https://wa.me/?text=${textoPartilha}%20${encodeURIComponent(urlPartilha)}`} target="_blank" rel="noopener noreferrer" className="btn-partilha btn-wa">
                   <span>💬</span> WhatsApp
                 </a>
-                <a
-                  href={`https://www.instagram.com/`}
-                  target="_blank" rel="noopener noreferrer"
-                  className="btn-partilha btn-ig"
-                  title="Abre o Instagram — partilha manualmente com as fotos"
-                >
+                <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" className="btn-partilha btn-ig" title="Abre o Instagram — partilha manualmente com as fotos">
                   <span>📷</span> Instagram
                 </a>
-                <a
-                  href={`https://www.tiktok.com/`}
-                  target="_blank" rel="noopener noreferrer"
-                  className="btn-partilha btn-tt"
-                  title="Abre o TikTok — cria vídeo com as fotos"
-                >
+                <a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" className="btn-partilha btn-tt" title="Abre o TikTok — cria vídeo com as fotos">
                   <span>♪</span> TikTok
                 </a>
-                <button
-                  className="btn-partilha btn-copy"
-                  onClick={() => { navigator.clipboard.writeText(urlPartilha); alert('Link copiado!'); }}
-                >
+                <button className="btn-partilha btn-copy" onClick={() => { navigator.clipboard.writeText(urlPartilha); alert('Link copiado!'); }}>
                   <span>🔗</span> Copiar link
                 </button>
               </div>
@@ -258,9 +271,7 @@ export default function ImovelPage() {
             </div>
           </div>
 
-          {/* Sidebar */}
           <aside className="imovel-sidebar">
-            {/* Ficha técnica */}
             <div className="ficha-tecnica">
               <h3>Ficha Técnica</h3>
               <div className="ficha-linha"><span>Tipologia</span><strong>{im.tipo}</strong></div>
@@ -274,12 +285,11 @@ export default function ImovelPage() {
               <div className="ficha-linha"><span>Piso</span><strong>{im.piso}</strong></div>
               <div className="ficha-linha"><span>Elevador</span><strong>{im.elevador ? 'Sim' : 'Não'}</strong></div>
               <div className="ficha-linha"><span>Estacionamento</span><strong>{im.estacionamento}</strong></div>
-              <div className="ficha-linha"><span>Ano construção</span><strong>{im.ano}</strong></div>
+              {im.ano && <div className="ficha-linha"><span>Ano construção</span><strong>{im.ano}</strong></div>}
               <div className="ficha-linha"><span>Classe energética</span><strong>{im.energia}</strong></div>
               <div className="ficha-linha"><span>Referência</span><strong>{im.ref}</strong></div>
             </div>
 
-            {/* Consultor */}
             <div className="sidebar-consultor">
               <img src="/marco-fato.jpg" alt="Marco Neves" />
               <h4>Marco Neves</h4>
@@ -289,12 +299,13 @@ export default function ImovelPage() {
               <a href={`https://wa.me/351969692793?text=Olá%20Marco,%20estou%20interessado%20no%20imóvel%20${im.ref}%20-%20${encodeURIComponent(im.titulo)}`} target="_blank" rel="noopener noreferrer" className="sc-wa">
                 💬 WhatsApp
               </a>
-              <a href={im.remax} target="_blank" rel="noopener noreferrer" className="sc-remax">
-                Ver no RE/MAX →
-              </a>
+              {im.remax && im.remax !== 'https://www.remax.pt' && (
+                <a href={im.remax} target="_blank" rel="noopener noreferrer" className="sc-remax">
+                  Ver no RE/MAX →
+                </a>
+              )}
             </div>
 
-            {/* Formulário */}
             <div className="sidebar-form">
               <p className="sidebar-form-titulo">Pedir Informações</p>
               <LeadForm
@@ -307,14 +318,18 @@ export default function ImovelPage() {
         </div>
       </div>
 
-      {/* Outros imóveis */}
       <div className="outros-imoveis">
         <div className="container">
           <h3>Outros imóveis disponíveis</h3>
           <div className="outros-grid">
             {Object.entries(IMOVEIS_DADOS).filter(([s]) => s !== slug).map(([s, i]) => (
               <Link to={`/imoveis/${s}`} key={s} className="outro-card">
-                <img src={`/imoveis/${i.pasta}/foto-1.jpg`} alt={i.titulo} />
+                <img
+                  src={s === 't3-benavente-historica'
+                    ? `/imoveis/${i.pasta}/foto-fachada.jpg`
+                    : `/imoveis/${i.pasta}/foto-1.jpg`}
+                  alt={i.titulo}
+                />
                 <div className="outro-info">
                   <span className="outro-tipo">{i.tipo}</span>
                   <p>{i.zona}</p>
