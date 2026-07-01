@@ -135,6 +135,38 @@ Rodeado de escolas, supermercados e serviços, este é o ponto onde a conveniên
     pasta: 't2-parque-nacoes',
     numFotos: 4,
   },
+  't3-malvarosa-suite': {
+    titulo: 'Apartamento T3 na Urbanização Malvarosa',
+    subtitulo: 'Último andar · Suite com varanda · Garagem · Alverca do Ribatejo',
+    preco: '495 000 €',
+    tipo: 'T3', quartos: 3, wc: 2, area: '120 m²',
+    piso: '4.º Andar (último)', elevador: true, estacionamento: '1 lugar (garagem)', ano: null, energia: 'C',
+    ref: '121981024-1033',
+    zona: 'Urbanização Malvarosa, Alverca do Ribatejo',
+    destaque: 'Último andar · Suite com varanda · 3 varandas · Garagem · Condomínio 47€/mês',
+    descricao: `Um T3 pensado para quem quer chegar a casa e sentir que chegou a algum lado. Na Urbanização da Malvarosa, uma das zonas mais equilibradas de Alverca — próxima do centro, do comboio e das principais escolas, mas suficientemente recuada para ter silêncio ao fim do dia.
+A entrada abre para uma sala ampla com acesso a varanda — o tipo de espaço onde as manhãs de fim-de-semana começam devagar. A cozinha, totalmente equipada, tem também a sua varanda, o que muda completamente a forma como se cozinha (com luz natural e não em corredor cego, como acontece em 80% dos T3 do mercado nesta faixa de preço).
+Os três quartos foram distribuídos com sentido: a suite principal com varanda e casa de banho privativa com base de duche — o refúgio que se procura ao chegar a casa depois de um dia longo. Os outros dois quartos têm roupeiros embutidos, servidos por uma casa de banho de apoio com banheira — ideal para famílias com crianças ou para receber quem visita.
+Último andar de prédio de 4 andares — mais luz, menos ruído, mais privacidade. Ar condicionado, garagem privativa e condomínio a apenas 47€/mês, gerido por empresa especializada.
+Alverca vai ter uma nova estação intermodal com a modernização da Linha do Norte (projecto IP em execução). Os imóveis desta zona valorizaram em média 8% no último ano, e a procura por T3 em urbanizações consolidadas está a subir com a saída de famílias de Lisboa.`,
+    caracteristicas: [
+      '3 Quartos (1 suite com varanda)',
+      '2 Casas de banho (suite com duche + apoio com banheira)',
+      'Sala ampla com acesso a varanda',
+      'Cozinha totalmente equipada (frigorífico, placa, forno, micro-ondas, exaustor, caldeira, máquina de lavar loiça e roupa) com varanda',
+      'Roupeiros embutidos nos quartos secundários',
+      'Ar condicionado',
+      '1 Lugar de garagem privativo',
+      'Último andar (4.º de 4) — prédio baixo',
+      'Condomínio a apenas 47€/mês',
+      'Certificado energético C',
+      'A 5 min da A1 · 25 min do Aeroporto de Lisboa',
+      'Estação CP de Alverca — Lisboa Oriente em ~25 min',
+    ],
+    remax: 'https://www.remax.pt',
+    pasta: 't3-malvarosa-suite',
+    numFotos: 10,
+  },
 };
 
 function Galeria({ pasta, numFotos }) {
