@@ -173,7 +173,7 @@ function Galeria({ pasta, numFotos }) {
   const [fotoAtiva, setFotoAtiva] = useState(0);
   const [lightboxAberto, setLightboxAberto] = useState(false);
 
-  const fotos = pasta === 't3-benavente-historica'
+const fotos = pasta === 't3-benavente-historica'
     ? [
         `/imoveis/${pasta}/fot_fachada.jpg`,
         `/imoveis/${pasta}/foto_fachada2.jpg`,
@@ -186,6 +186,19 @@ function Galeria({ pasta, numFotos }) {
         `/imoveis/${pasta}/foto_terraco2.png`,
         `/imoveis/${pasta}/foto_benavente.jpg`,
         `/imoveis/${pasta}/foto_aerea.jpg`,
+      ]
+    : pasta === 't3-malvarosa-suite'
+    ? [
+        `/imoveis/${pasta}/Foto-1.jpg`,
+        `/imoveis/${pasta}/Foto-2.jpg`,
+        `/imoveis/${pasta}/Foto-3.jpg`,
+        `/imoveis/${pasta}/Foto-4.jpg`,
+        `/imoveis/${pasta}/Foto-5.png`,
+        `/imoveis/${pasta}/Foto-6.png`,
+        `/imoveis/${pasta}/Foto-7.jpg`,
+        `/imoveis/${pasta}/Foto-8.jpg`,
+        `/imoveis/${pasta}/Foto-9.jpg`,
+        `/imoveis/${pasta}/Foto-10.jpg`,
       ]
     : Array.from({ length: numFotos }, (_, i) => `/imoveis/${pasta}/foto-${i + 1}.jpg`);
 
