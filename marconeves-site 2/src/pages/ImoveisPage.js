@@ -56,7 +56,7 @@ const IMOVEIS = [
     area: '120 m²', quartos: 3, wc: 2, piso: '4.º Andar (último)',
     destaque: 'Último andar · Suite com varanda · 3 varandas · Garagem',
     desc: 'T3 no último andar de prédio baixo, com suite privativa (varanda + base de duche), 2 quartos com roupeiros embutidos, sala e cozinha ambas com varanda. Ar condicionado, garagem e condomínio a apenas 47€/mês.',
-    foto: '/imoveis/t3-malvarosa-suite/foto-sala.jpg',
+    foto: '/imoveis/t3-malvarosa-suite/foto-1.jpg',
     ref: '121981024-1033', energia: 'C',
   },
 ];
