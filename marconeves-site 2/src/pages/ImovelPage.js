@@ -19,6 +19,8 @@ const IMOVEIS_DADOS = {
 
 Com 120 m² bem distribuídos, este apartamento de 2005 foi pensado para quem procura conforto sem abdicar de localização. A sala ampla, com zona de estar e sala de jantar em open space, tem luz natural em abundância e ligação direta à varanda com vista de rio.
 
+A cozinha, equipada e com acesso direto a uma varanda com vista sobre a serra, é um espaço funcional pensado para o dia a dia — com bancada ampla e boa arrumação.
+
 O escritório com boa dimensão é um trunfo para quem trabalha a partir de casa — algo cada vez mais valorizado e cada vez mais raro de encontrar já configurado. O quarto principal tem ar condicionado e roupeiros embutidos.
 
 Duas casas de banho completas, uma delas com hidromassagem, e um hall de entrada em madeira nobre que impõe presença desde o primeiro momento.
@@ -30,6 +32,7 @@ Inclui garagem box fechada para 1 carro, elevador no prédio e zona de arrumos. 
       '3 Quartos',
       '2 Casas de banho (1 com hidromassagem)',
       'Sala ampla em open space',
+      'Cozinha equipada com acesso a varanda',
       'Escritório equipado',
       'Varanda com vista de rio',
       'Garagem box fechada · 1 lugar',
@@ -47,6 +50,8 @@ Inclui garagem box fechada para 1 carro, elevador no prédio e zona de arrumos. 
       'foto_sala2.jpg',
       'foto_sala_tv.jpg',
       'foto_jantar.jpg',
+      'foto_cozinha.jpg',
+      'foto_cozinha2.jpg',
       'foto_escritorio.jpg',
       'foto_quarto.jpg',
       'foto_varanda.jpg',
