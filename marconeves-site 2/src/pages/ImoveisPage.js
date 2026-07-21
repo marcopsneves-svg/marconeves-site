@@ -6,6 +6,15 @@ import './ImoveisPage.css';
 
 const IMOVEIS = [
   {
+    id: 6, slug: 't3-vila-franca-a1', tipo: 'T3', preco: '435 000 €',
+    zona: 'Vila Franca de Xira', freguesia: 'Vila Franca de Xira',
+    area: '120 m²', quartos: 3, wc: 2, piso: 'Andar Alto',
+    destaque: 'Vista de rio · Box fechada · Acesso imediato à A1',
+    desc: 'Apartamento T3 com vista de rio, escritório equipado e garagem box fechada. A poucos minutos da A1, rodeado de comércio e serviços.',
+    foto: '/imoveis/t3-vila-franca-a1/foto_predio.jpg',
+    ref: 'MN-VFX-002', energia: 'C',
+  },
+  {
     id: 5, slug: 't3-benavente-historica', tipo: 'T3', preco: '300 000 €',
     zona: 'Benavente', freguesia: 'Centro Histórico',
     area: '97 m²', quartos: 3, wc: 2, piso: 'Moradia 2 Pisos',
@@ -15,16 +24,7 @@ const IMOVEIS = [
     ref: 'MN-BNV-001', energia: 'D',
   },
   {
-    id: 6, slug: 't3-malvarosa-suite', tipo: 'T3', preco: '495 000 €',
-    zona: 'Alverca do Ribatejo', freguesia: 'Urbanização Malvarosa',
-    area: '120 m²', quartos: 3, wc: 2, piso: '4.º Andar (último)',
-    destaque: 'Último andar · Suite com varanda · 3 varandas · Garagem',
-    desc: 'T3 no último andar de prédio baixo, com suite privativa (varanda + base de duche), 2 quartos com roupeiros embutidos, sala e cozinha ambas com varanda. Ar condicionado, garagem e condomínio a apenas 47€/mês.',
-    foto: '/imoveis/t3-malvarosa-suite/Foto-1.jpg',
-    ref: '121981024-1033', energia: 'C',
-  },
-  {
-    id: 1, slug: 't3-povos', tipo: 'T3', preco: '290 000 €', vendido: true,
+    id: 1, slug: 't3-povos', tipo: 'T3', preco: '290 000 €',
     zona: 'Vila Franca de Xira', freguesia: 'Povos',
     area: '106 m²', quartos: 3, wc: 2, piso: '3.º Andar',
     destaque: 'Perto do Hospital · Acesso A1',
@@ -33,16 +33,16 @@ const IMOVEIS = [
     ref: '121981557-1', energia: 'D',
   },
   {
-    id: 2, slug: 't4-malvarosa', tipo: 'T4', preco: '689 000 €', vendido: true,
+    id: 2, slug: 't4-malvarosa', tipo: 'T4', preco: '689 000 €', precoAnterior: '699 000 €',
     zona: 'Alverca do Ribatejo', freguesia: 'Malvarosa',
     area: '180 m²', quartos: 4, wc: 3, piso: '6.º Andar',
-    destaque: 'Duas frentes · Garagem 4 carros',
+    destaque: 'Redução de preço · Garagem 4 carros',
     desc: 'T4 na praça principal da Malvarosa. Duas frentes, 180m² úteis e garagem para 4 carros.',
     foto: '/imoveis/t4-malvarosa/foto-1.jpg',
     ref: '121981260-247', energia: 'C',
   },
   {
-    id: 3, slug: 't3-malvarosa-plaza', tipo: 'T3', preco: '545 000 €', vendido: true,
+    id: 3, slug: 't3-malvarosa-plaza', tipo: 'T3', preco: '545 000 €',
     zona: 'Alverca do Ribatejo', freguesia: 'Condomínio Plaza · Malvarosa',
     area: '169 m²', quartos: 3, wc: 3, piso: '3.º Andar',
     destaque: 'Condomínio fechado · Piscina · Jardim',
@@ -51,7 +51,7 @@ const IMOVEIS = [
     ref: '121981260-238', energia: 'B',
   },
   {
-    id: 4, slug: 't2-parque-nacoes', tipo: 'T2', preco: '685 000 €', vendido: true,
+    id: 4, slug: 't2-parque-nacoes', tipo: 'T2', preco: '685 000 €',
     zona: 'Lisboa', freguesia: 'Parque das Nações',
     area: '107 m²', quartos: 2, wc: 1, piso: '7.º Andar',
     destaque: 'Vista de rio · Parque das Nações',

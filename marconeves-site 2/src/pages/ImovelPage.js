@@ -6,6 +6,56 @@ import LeadForm from '../components/LeadForm';
 import './ImovelPage.css';
 
 const IMOVEIS_DADOS = {
+  't3-vila-franca-a1': {
+    titulo: 'Apartamento T3 em Vila Franca de Xira',
+    subtitulo: 'Garagem Box · Junto à A1 · Vila Franca de Xira',
+    preco: '435 000 €',
+    tipo: 'T3', quartos: 3, wc: 2, area: '120 m²',
+    piso: 'Andar Alto', elevador: true, estacionamento: 'Box fechada · 1 lugar', ano: 2005, energia: 'C',
+    ref: 'MN-VFX-002',
+    zona: 'Vila Franca de Xira',
+    destaque: 'Vista de rio · Box fechada · Acesso imediato à A1',
+    descricao: `Um T3 que se destaca pela qualidade dos acabamentos e por uma vista que raramente se encontra neste segmento de preço — vista aberta sobre o rio, a partir da varanda principal.
+
+Com 120 m² bem distribuídos, este apartamento de 2005 foi pensado para quem procura conforto sem abdicar de localização. A sala ampla, com zona de estar e sala de jantar em open space, tem luz natural em abundância e ligação direta à varanda com vista de rio.
+
+O escritório com boa dimensão é um trunfo para quem trabalha a partir de casa — algo cada vez mais valorizado e cada vez mais raro de encontrar já configurado. O quarto principal tem ar condicionado e roupeiros embutidos.
+
+Duas casas de banho completas, uma delas com hidromassagem, e um hall de entrada em madeira nobre que impõe presença desde o primeiro momento.
+
+A localização é um dos grandes trunfos deste imóvel: a poucos minutos da entrada da A1, com acesso rápido a Lisboa, rodeado de comércio, serviços e restauração — tudo o que o dia a dia exige, à porta de casa.
+
+Inclui garagem box fechada para 1 carro, elevador no prédio e zona de arrumos. Uma oportunidade rara para quem quer espaço, vista e localização estratégica, sem comprometer nenhum dos três.`,
+    caracteristicas: [
+      '3 Quartos',
+      '2 Casas de banho (1 com hidromassagem)',
+      'Sala ampla em open space',
+      'Escritório equipado',
+      'Varanda com vista de rio',
+      'Garagem box fechada · 1 lugar',
+      'Elevador',
+      'Ar condicionado no quarto principal',
+      'Hall de entrada em madeira nobre',
+      'Construção de 2005',
+      'Acesso imediato à A1',
+    ],
+    remax: 'https://www.remax.pt',
+    fotos: [
+      'foto_predio.jpg',
+      'foto_hall.jpg',
+      'foto_sala.jpg',
+      'foto_sala2.jpg',
+      'foto_sala_tv.jpg',
+      'foto_jantar.jpg',
+      'foto_escritorio.jpg',
+      'foto_quarto.jpg',
+      'foto_varanda.jpg',
+      'foto_wc_suite.jpg',
+      'foto_wc2.jpg',
+      'foto_garagem.jpg',
+    ],
+    pasta: 't3-vila-franca-a1',
+  },
   't3-benavente-historica': {
     titulo: 'Moradia T3 no Centro Histórico de Benavente',
     subtitulo: 'Terraço com vista para a Lezíria · Centro Histórico · Benavente',
@@ -39,8 +89,20 @@ Qualidade de vida real. Sem abrir mão da cidade.`,
       'Aeroporto de Lisboa a ~35 min',
     ],
     remax: 'https://www.remax.pt',
+    fotos: [
+      'fot_fachada.jpg',
+      'foto_fachada2.jpg',
+      'foto_sala.png',
+      'foto_cozinha.png',
+      'foto_quarto1.png',
+      'foto_quarto2.png',
+      'foto_quarto3.png',
+      'foto_terraco.png',
+      'foto_terraco2.png',
+      'foto_benavente.jpg',
+      'foto_aerea.jpg',
+    ],
     pasta: 't3-benavente-historica',
-    numFotos: 11,
   },
   't3-povos': {
     titulo: 'Apartamento T3 em Vila Franca de Xira',
@@ -135,71 +197,14 @@ Rodeado de escolas, supermercados e serviços, este é o ponto onde a conveniên
     pasta: 't2-parque-nacoes',
     numFotos: 4,
   },
-  't3-malvarosa-suite': {
-    titulo: 'Apartamento T3 na Urbanização Malvarosa',
-    subtitulo: 'Último andar · Suite com varanda · Garagem · Alverca do Ribatejo',
-    preco: '495 000 €',
-    tipo: 'T3', quartos: 3, wc: 2, area: '120 m²',
-    piso: '4.º Andar (último)', elevador: true, estacionamento: '1 lugar (garagem)', ano: null, energia: 'C',
-    ref: '121981024-1033',
-    zona: 'Urbanização Malvarosa, Alverca do Ribatejo',
-    destaque: 'Último andar · Suite com varanda · 3 varandas · Garagem · Condomínio 47€/mês',
-    descricao: `Um T3 pensado para quem quer chegar a casa e sentir que chegou a algum lado. Na Urbanização da Malvarosa, uma das zonas mais equilibradas de Alverca — próxima do centro, do comboio e das principais escolas, mas suficientemente recuada para ter silêncio ao fim do dia.
-A entrada abre para uma sala ampla com acesso a varanda — o tipo de espaço onde as manhãs de fim-de-semana começam devagar. A cozinha, totalmente equipada, tem também a sua varanda, o que muda completamente a forma como se cozinha (com luz natural e não em corredor cego, como acontece em 80% dos T3 do mercado nesta faixa de preço).
-Os três quartos foram distribuídos com sentido: a suite principal com varanda e casa de banho privativa com base de duche — o refúgio que se procura ao chegar a casa depois de um dia longo. Os outros dois quartos têm roupeiros embutidos, servidos por uma casa de banho de apoio com banheira — ideal para famílias com crianças ou para receber quem visita.
-Último andar de prédio de 4 andares — mais luz, menos ruído, mais privacidade. Ar condicionado, garagem privativa e condomínio a apenas 47€/mês, gerido por empresa especializada.
-Alverca vai ter uma nova estação intermodal com a modernização da Linha do Norte (projecto IP em execução). Os imóveis desta zona valorizaram em média 8% no último ano, e a procura por T3 em urbanizações consolidadas está a subir com a saída de famílias de Lisboa.`,
-    caracteristicas: [
-      '3 Quartos (1 suite com varanda)',
-      '2 Casas de banho (suite com duche + apoio com banheira)',
-      'Sala ampla com acesso a varanda',
-      'Cozinha totalmente equipada (frigorífico, placa, forno, micro-ondas, exaustor, caldeira, máquina de lavar loiça e roupa) com varanda',
-      'Roupeiros embutidos nos quartos secundários',
-      'Ar condicionado',
-      '1 Lugar de garagem privativo',
-      'Último andar (4.º de 4) — prédio baixo',
-      'Condomínio a apenas 47€/mês',
-      'Certificado energético C',
-      'A 5 min da A1 · 25 min do Aeroporto de Lisboa',
-      'Estação CP de Alverca — Lisboa Oriente em ~25 min',
-    ],
-    remax: 'https://www.remax.pt',
-    pasta: 't3-malvarosa-suite',
-    numFotos: 10,
-  },
 };
 
-function Galeria({ pasta, numFotos }) {
+function Galeria({ pasta, numFotos, fotosNomes }) {
   const [fotoAtiva, setFotoAtiva] = useState(0);
   const [lightboxAberto, setLightboxAberto] = useState(false);
 
-const fotos = pasta === 't3-benavente-historica'
-    ? [
-        `/imoveis/${pasta}/fot_fachada.jpg`,
-        `/imoveis/${pasta}/foto_fachada2.jpg`,
-        `/imoveis/${pasta}/foto_sala.png`,
-        `/imoveis/${pasta}/foto_cozinha.png`,
-        `/imoveis/${pasta}/foto_quarto1.png`,
-        `/imoveis/${pasta}/foto_quarto2.png`,
-        `/imoveis/${pasta}/foto_quarto3.png`,
-        `/imoveis/${pasta}/foto_terraco.png`,
-        `/imoveis/${pasta}/foto_terraco2.png`,
-        `/imoveis/${pasta}/foto_benavente.jpg`,
-        `/imoveis/${pasta}/foto_aerea.jpg`,
-      ]
-    : pasta === 't3-malvarosa-suite'
-    ? [
-        `/imoveis/${pasta}/Foto-1.jpg`,
-        `/imoveis/${pasta}/Foto-2.jpg`,
-        `/imoveis/${pasta}/Foto-3.jpg`,
-        `/imoveis/${pasta}/Foto-4.jpg`,
-        `/imoveis/${pasta}/Foto-5.png`,
-        `/imoveis/${pasta}/Foto-6.png`,
-        `/imoveis/${pasta}/Foto-7.jpg`,
-        `/imoveis/${pasta}/Foto-8.jpg`,
-        `/imoveis/${pasta}/Foto-9.jpg`,
-        `/imoveis/${pasta}/Foto-10.jpg`,
-      ]
+  const fotos = fotosNomes && fotosNomes.length > 0
+    ? fotosNomes.map(nome => `/imoveis/${pasta}/${nome}`)
     : Array.from({ length: numFotos }, (_, i) => `/imoveis/${pasta}/foto-${i + 1}.jpg`);
 
   const anterior = () => setFotoAtiva(f => (f - 1 + fotos.length) % fotos.length);
@@ -274,7 +279,7 @@ export default function ImovelPage() {
       <div className="imovel-body">
         <div className="container imovel-layout">
           <div className="imovel-esq">
-            <Galeria pasta={im.pasta} numFotos={im.numFotos} />
+            <Galeria pasta={im.pasta} numFotos={im.numFotos} fotosNomes={im.fotos} />
 
             <div className="imovel-descricao">
               <h2>Descrição</h2>
@@ -367,21 +372,21 @@ export default function ImovelPage() {
         <div className="container">
           <h3>Outros imóveis disponíveis</h3>
           <div className="outros-grid">
-            {Object.entries(IMOVEIS_DADOS).filter(([s]) => s !== slug).map(([s, i]) => (
-              <Link to={`/imoveis/${s}`} key={s} className="outro-card">
-                <img
-                  src={s === 't3-benavente-historica'
-                    ? `/imoveis/${i.pasta}/fot_fachada.jpg`
-                    : `/imoveis/${i.pasta}/foto-1.jpg`}
-                  alt={i.titulo}
-                />
-                <div className="outro-info">
-                  <span className="outro-tipo">{i.tipo}</span>
-                  <p>{i.zona}</p>
-                  <strong>{i.preco}</strong>
-                </div>
-              </Link>
-            ))}
+            {Object.entries(IMOVEIS_DADOS).filter(([s]) => s !== slug).map(([s, i]) => {
+              const capa = i.fotos && i.fotos.length > 0
+                ? `/imoveis/${i.pasta}/${i.fotos[0]}`
+                : `/imoveis/${i.pasta}/foto-1.jpg`;
+              return (
+                <Link to={`/imoveis/${s}`} key={s} className="outro-card">
+                  <img src={capa} alt={i.titulo} />
+                  <div className="outro-info">
+                    <span className="outro-tipo">{i.tipo}</span>
+                    <p>{i.zona}</p>
+                    <strong>{i.preco}</strong>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </div>
