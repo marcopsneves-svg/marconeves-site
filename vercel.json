@@ -1,0 +1,15 @@
+{
+  "installCommand": "cd \"marconeves-site 2\" && npm install",
+  "buildCommand": "cd \"marconeves-site 2\" && npm run build",
+  "outputDirectory": "marconeves-site 2/build",
+  "rewrites": [
+    {
+      "source": "/moradia-benavente-historica",
+      "destination": "/moradia-benavente-historica.html"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
