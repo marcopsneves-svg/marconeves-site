@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AvaliacaoPage from './pages/AvaliacaoPage';
+import ViabilidadePage from './pages/ViabilidadePage';
 import ContactoPage from './pages/ContactoPage';
 import CartaoPage from './pages/CartaoPage';
 import ImoveisPage from './pages/ImoveisPage';
@@ -22,6 +23,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/avaliacao-gratuita" element={<AvaliacaoPage />} />
+        <Route path="/viabilidade-de-credito" element={<ViabilidadePage />} />
         <Route path="/contacto" element={<ContactoPage />} />
         <Route path="/cartao" element={<CartaoPage />} />
         <Route path="/imoveis" element={<ImoveisPage />} />
