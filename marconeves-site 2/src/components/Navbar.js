@@ -35,6 +35,7 @@ export default function Navbar() {
           <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Início</Link>
           <Link to="/imoveis" className={location.pathname.startsWith('/imoveis') ? 'active' : ''}>Imóveis</Link>
           <Link to="/vender" className={location.pathname === '/vender' ? 'active' : ''}>Quero Vender</Link>
+          <Link to="/viabilidade-de-credito" className={location.pathname === '/viabilidade-de-credito' ? 'active' : ''}>Viabilidade</Link>
           <Link to="/blog" className={location.pathname.startsWith('/blog') ? 'active' : ''}>Blog</Link>
           <Link to="/referencias" className={`btn-referencias ${location.pathname === '/referencias' ? 'active' : ''}`}>
             🤝 Ganha 300€
