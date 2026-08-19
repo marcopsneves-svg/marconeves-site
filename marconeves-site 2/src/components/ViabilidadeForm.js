@@ -53,10 +53,11 @@ export default function ViabilidadeForm() {
         }
 
         setTimeout(() => {
+          const linhaHub = dados.hubLink ? `\n\n📋 Abrir no hub: ${dados.hubLink}` : '';
           const msg = encodeURIComponent(
             `Olá Marco! Acabei de pedir uma simulação de viabilidade de crédito no seu site.\n\n` +
             `Nome: ${form.nome}\nTelefone: ${form.telefone}\n\n` +
-            `Aguardo o seu contacto!`
+            `Aguardo o seu contacto!${linhaHub}`
           );
           window.open(`https://wa.me/351969692793?text=${msg}`, '_blank');
         }, 1500);
