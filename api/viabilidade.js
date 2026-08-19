@@ -24,6 +24,77 @@ function numberProp(value) {
   return { number: Number.isFinite(n) ? n : null };
 }
 
+// -- Ligação ao Hub (marconeves-hubfinal.vercel.app) -----------------------
+// O Hub guarda os "Pedidos de Viabilidade" apenas no localStorage do browser
+// do Marco (não tem base de dados própria). A página do Hub já sabe receber
+// um registo através do parâmetro ?viab=<json-em-base64url> e gravá-lo
+// automaticamente assim que é aberta. Aqui construímos esse link para que o
+// Marco o receba já pronto na mensagem de WhatsApp e baste um clique.
+const HUB_BASE_URL = 'https://marconeves-hubfinal.vercel.app/marco_neves_viabilidades.html';
+
+function formatarDataPT(d) {
+  const dd = String(d.getDate()).padStart(2, '0');
+  const mm = String(d.getMonth() + 1).padStart(2, '0');
+  const yyyy = d.getFullYear();
+  return `${dd}/${mm}/${yyyy}`;
+}
+
+function construirRegistoHub({
+  nome,
+  telefone,
+  email,
+  rendimento,
+  entrada,
+  outrosCreditos,
+  situacaoBancaria,
+  casaParaVender,
+  contactoPreferido,
+  zona,
+  mensagem,
+}) {
+  const obsPartes = [];
+  if (situacaoBancaria) obsPartes.push(`Situação bancária: ${situacaoBancaria}`);
+  if (casaParaVender) obsPartes.push(`Casa para vender: ${casaParaVender}`);
+  if (outrosCreditos) obsPartes.push(`Outros créditos mensais: ${outrosCreditos}€`);
+  if (contactoPreferido) obsPartes.push(`Contacto preferido: ${contactoPreferido}`);
+  if (mensagem) obsPartes.push(`Mensagem: ${mensagem}`);
+
+  return {
+    id: Date.now(),
+    data: formatarDataPT(new Date()),
+    estado: 'Pendente',
+    nome: nome || '',
+    email: email || '',
+    tel: telefone || '',
+    nasc: '',
+    doc: '',
+    civil: '',
+    laboral: '',
+    neg: 'Crédito à Habitação',
+    tipo_imovel: '',
+    local: zona || '',
+    tipologia: '',
+    imovel: '',
+    finalidade: '',
+    capital: entrada || '',
+    rendimento: rendimento || '',
+    obs: obsPartes.join(' · ').slice(0, 600),
+    valor_aprovado: '',
+    notas_seguimento: '',
+    imoveis: [],
+  };
+}
+
+function construirLinkHub(registo) {
+  const json = JSON.stringify(registo);
+  const b64 = Buffer.from(json, 'utf8')
+    .toString('base64')
+    .replace(/\+/g, '-')
+    .replace(/\//g, '_')
+    .replace(/=+$/, '');
+  return `${HUB_BASE_URL}?viab=${b64}`;
+}
+
 module.exports = async (req, res) => {
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -149,7 +220,14 @@ module.exports = async (req, res) => {
       return;
     }
 
-    res.status(200).json({ ok: true, id: dados.id });
+    let hubLink;
+    try {
+      hubLink = construirLinkHub(construirRegistoHub(body));
+    } catch (linkErr) {
+      console.error('Erro a construir link do Hub:', linkErr);
+    }
+
+    res.status(200).json({ ok: true, id: dados.id, hubLink });
   } catch (err) {
     console.error('Erro inesperado:', err);
     res.status(500).json({ ok: false, erro: 'Erro inesperado ao gravar o pedido.' });
