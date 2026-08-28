@@ -23,7 +23,7 @@ A varanda é o ponto que surpreende: vista aberta sobre o bairro, com o horizont
 
 Inclui ainda um lugar de estacionamento interno — nesta zona, resolver o carro sem depender da rua à noite já vale, por si só, uma boa parte da tranquilidade de viver aqui.
 
-O Sobralinho oferece o equilíbrio que cada vez mais famílias procuram: bairro residencial calmo, com Vila Franca de Xira — comércio, serviços, escolas e ligações rodoviárias e ferroviárias para Lisboa — a poucos minutos de distância.
+O Sobralinho oferece o equilíbrio que cada vez mais famílias procuram: bairro residencial calmo, com Alverca do Ribatejo — comércio, serviços, escolas e ligações rodoviárias e ferroviárias para Lisboa — a poucos minutos de distância.
 
 Um T2 pronto a habitar, com preço já bem estimado para o mercado atual. Quem procura conforto, praticidade e uma escola literalmente à porta, não vai encontrar muitas oportunidades assim.`,
     caracteristicas: [

@@ -58,6 +58,7 @@ export default function HomePage() {
           <p className="hero-frase">"Confiança é o início...<br/>Resultados são o caminho"</p>
           <div className="hero-ctas">
             <Link to="/avaliacao-gratuita" className="btn-primary">Avaliação Gratuita</Link>
+            <Link to="/viabilidade-de-credito" className="btn-secondary">Viabilidade Financeira</Link>
             <a href="https://wa.me/351969692793?text=Olá%20Marco,%20vim%20do%20seu%20site%20e%20gostaria%20de%20mais%20informações." target="_blank" rel="noopener noreferrer" className="btn-secondary">💬 WhatsApp</a>
           </div>
         </div>
