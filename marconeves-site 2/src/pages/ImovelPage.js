@@ -6,6 +6,52 @@ import LeadForm from '../components/LeadForm';
 import './ImovelPage.css';
 
 const IMOVEIS_DADOS = {
+  't2-sobralinho': {
+    titulo: 'Apartamento T2 no Sobralinho',
+    subtitulo: 'A 50 metros da escola · Sobralinho · Vila Franca de Xira',
+    preco: '295 000 €',
+    tipo: 'T2', quartos: 2, wc: 1, area: '90 m²',
+    piso: '2.º Andar', elevador: true, estacionamento: 'Interior · 1 lugar', ano: 2009, energia: 'C',
+    ref: 'MN-SBL-001',
+    zona: 'Sobralinho, Vila Franca de Xira',
+    destaque: 'A 50m da escola · Elevador · Estacionamento interior',
+    descricao: `Há uma coisa que este T2 resolve antes de qualquer outra: a escola fica a 50 metros da porta de casa. Não é força de expressão — é a distância real até ao Centro Social do Sobralinho. Para quem tem ou vai ter filhos pequenos, isto muda o dia a dia inteiro: menos trânsito matinal, menos stress a correr contra o relógio, mais dez minutos de sono.
+
+Construído em 2009 e situado no 2.º andar de um prédio com elevador, o apartamento tem 90 m² bem distribuídos por dois quartos, uma casa de banho completa, sala com boa entrada de luz natural e cozinha equipada com acesso direto a varanda.
+
+A varanda é o ponto que surpreende: vista aberta sobre o bairro, com o horizonte a abrir para o lado da lezíria, e sol da tarde para quem gosta de fechar o dia ali, com um café na mão, sem sair de casa.
+
+Inclui ainda um lugar de estacionamento interno — nesta zona, resolver o carro sem depender da rua à noite já vale, por si só, uma boa parte da tranquilidade de viver aqui.
+
+O Sobralinho oferece o equilíbrio que cada vez mais famílias procuram: bairro residencial calmo, com Vila Franca de Xira — comércio, serviços, escolas e ligações rodoviárias e ferroviárias para Lisboa — a poucos minutos de distância.
+
+Um T2 pronto a habitar, com preço já bem estimado para o mercado atual. Quem procura conforto, praticidade e uma escola literalmente à porta, não vai encontrar muitas oportunidades assim.`,
+    caracteristicas: [
+      '2 Quartos',
+      '1 Casa de banho completa',
+      'Sala com boa luz natural',
+      'Cozinha equipada com acesso a varanda',
+      'Varanda com vista aberta',
+      'Elevador',
+      'Estacionamento interior · 1 lugar',
+      'Construção de 2009',
+      'A 50 metros da escola (Centro Social do Sobralinho)',
+      '2.º Andar',
+    ],
+    remax: 'https://www.remax.pt',
+    fotos: [
+      'foto_sala.jpg',
+      'foto_cozinha.jpg',
+      'foto_wc.jpg',
+      'foto_quarto1.jpg',
+      'foto_quarto1b.jpg',
+      'foto_quarto2.jpg',
+      'foto_quarto2b.jpg',
+      'foto_varanda.jpg',
+      'foto_varanda2.jpg',
+    ],
+    pasta: 't2-sobralinho',
+  },
   't3-vila-franca-a1': {
     titulo: 'Apartamento T3 em Vila Franca de Xira',
     subtitulo: 'Garagem Box · Junto à A1 · Vila Franca de Xira',

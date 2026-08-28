@@ -6,6 +6,15 @@ import './ImoveisPage.css';
 
 const IMOVEIS = [
   {
+    id: 7, slug: 't2-sobralinho', tipo: 'T2', preco: '295 000 €',
+    zona: 'Vila Franca de Xira', freguesia: 'Sobralinho',
+    area: '90 m²', quartos: 2, wc: 1, piso: '2.º Andar',
+    destaque: 'A 50m da escola · Elevador · Estacionamento interior',
+    desc: 'T2 de 2009 a 50 metros do Centro Social do Sobralinho. Elevador, estacionamento interior e varanda com vista aberta.',
+    foto: '/imoveis/t2-sobralinho/foto_sala.jpg',
+    ref: 'MN-SBL-001', energia: 'C',
+  },
+  {
     id: 6, slug: 't3-vila-franca-a1', tipo: 'T3', preco: '435 000 €',
     zona: 'Vila Franca de Xira', freguesia: 'Vila Franca de Xira',
     area: '120 m²', quartos: 3, wc: 2, piso: 'Andar Alto',
