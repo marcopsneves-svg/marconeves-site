@@ -7,6 +7,7 @@ const LEAD_EMAIL = 'marcopsneves@remax.pt';
 // ─────────────────────────────────────────────────────────────────
 
 export default function LeadForm({ tipo = 'avaliacao', titulo, subtitulo }) {
+  const isImovel = tipo.startsWith('imovel-');
   const [estado, setEstado] = useState('idle'); // idle | loading | sucesso | erro
   const [form, setForm] = useState({
     nome: '',
@@ -14,6 +15,7 @@ export default function LeadForm({ tipo = 'avaliacao', titulo, subtitulo }) {
     email: '',
     morada: '',
     tipologia: '',
+    financiamento: '',
     mensagem: '',
   });
 
@@ -30,7 +32,7 @@ export default function LeadForm({ tipo = 'avaliacao', titulo, subtitulo }) {
       ...form,
       tipo_pedido: tipo,
       data: new Date().toLocaleString('pt-PT'),
-      _subject: `[Marco Neves] Nova Lead - ${tipo === 'avaliacao' ? 'Avaliação Gratuita' : 'Contacto'} - ${form.nome}`,
+      _subject: `[Marco Neves] Nova Lead - ${isImovel ? `Pedido de Informações (${tipo.replace('imovel-', '')})` : 'Avaliação Gratuita'} - ${form.nome}`,
       _captcha: 'false',
       _template: 'table',
     };
@@ -68,7 +70,10 @@ export default function LeadForm({ tipo = 'avaliacao', titulo, subtitulo }) {
             `Olá Marco! Acabei de preencher o formulário no seu site.\n\n` +
             `Nome: ${form.nome}\n` +
             `Telefone: ${form.telefone}\n` +
-            `Morada: ${form.morada || 'Não indicada'}\n\n` +
+            (isImovel
+              ? `Imóvel: ${tipo.replace('imovel-', '')}\n` +
+                `Financiamento: ${form.financiamento || 'Não indicado'}\n\n`
+              : `Morada: ${form.morada || 'Não indicada'}\n\n`) +
             `Aguardo o seu contacto!`
           );
           window.open(`https://wa.me/351969692793?text=${msg}`, '_blank');
@@ -99,7 +104,7 @@ export default function LeadForm({ tipo = 'avaliacao', titulo, subtitulo }) {
         >
           💬 Falar no WhatsApp agora
         </a>
-        <button className="btn-reset" onClick={() => { setEstado('idle'); setForm({ nome:'',telefone:'',email:'',morada:'',tipologia:'',mensagem:'' }); }}>
+        <button className="btn-reset" onClick={() => { setEstado('idle'); setForm({ nome:'',telefone:'',email:'',morada:'',tipologia:'',financiamento:'',mensagem:'' }); }}>
           Enviar outro pedido
         </button>
       </div>
@@ -149,33 +154,50 @@ export default function LeadForm({ tipo = 'avaliacao', titulo, subtitulo }) {
           />
         </div>
 
-        <div className="form-group">
-          <label>Morada / Zona do Imóvel *</label>
-          <input
-            type="text"
-            name="morada"
-            value={form.morada}
-            onChange={handleChange}
-            placeholder="Ex: Rua das Flores, Lisboa / Póvoa de Santa Iria"
-            required
-          />
-        </div>
+        {!isImovel && (
+          <div className="form-group">
+            <label>Morada / Zona do Imóvel *</label>
+            <input
+              type="text"
+              name="morada"
+              value={form.morada}
+              onChange={handleChange}
+              placeholder="Ex: Rua das Flores, Lisboa / Póvoa de Santa Iria"
+              required
+            />
+          </div>
+        )}
 
-        <div className="form-group">
-          <label>Tipologia do Imóvel</label>
-          <select name="tipologia" value={form.tipologia} onChange={handleChange}>
-            <option value="">Seleciona a tipologia</option>
-            <option value="T0">T0 - Studio</option>
-            <option value="T1">T1</option>
-            <option value="T2">T2</option>
-            <option value="T3">T3</option>
-            <option value="T4">T4</option>
-            <option value="T4+">T4+</option>
-            <option value="Moradia">Moradia</option>
-            <option value="Terreno">Terreno</option>
-            <option value="Comercial">Espaço Comercial</option>
-          </select>
-        </div>
+        {!isImovel && (
+          <div className="form-group">
+            <label>Tipologia do Imóvel</label>
+            <select name="tipologia" value={form.tipologia} onChange={handleChange}>
+              <option value="">Seleciona a tipologia</option>
+              <option value="T0">T0 - Studio</option>
+              <option value="T1">T1</option>
+              <option value="T2">T2</option>
+              <option value="T3">T3</option>
+              <option value="T4">T4</option>
+              <option value="T4+">T4+</option>
+              <option value="Moradia">Moradia</option>
+              <option value="Terreno">Terreno</option>
+              <option value="Comercial">Espaço Comercial</option>
+            </select>
+          </div>
+        )}
+
+        {isImovel && (
+          <div className="form-group">
+            <label>Já tem crédito habitação aprovado?</label>
+            <select name="financiamento" value={form.financiamento} onChange={handleChange}>
+              <option value="">Seleciona uma opção</option>
+              <option value="Sim, já tenho aprovação/pré-aprovação">Sim, já tenho aprovação ou pré-aprovação</option>
+              <option value="Ainda não, vou precisar de financiamento">Ainda não, vou precisar de financiamento</option>
+              <option value="Não vou precisar de crédito (compra a pronto)">Não vou precisar de crédito (compra a pronto)</option>
+              <option value="Ainda não sei, quero perceber a minha capacidade">Ainda não sei, quero perceber a minha capacidade</option>
+            </select>
+          </div>
+        )}
 
         <div className="form-group">
           <label>Mensagem (opcional)</label>
@@ -196,7 +218,7 @@ export default function LeadForm({ tipo = 'avaliacao', titulo, subtitulo }) {
           {estado === 'loading' ? (
             <span>A enviar...</span>
           ) : (
-            <span>Pedir Avaliação Gratuita →</span>
+            <span>{isImovel ? 'Pedir Informações →' : 'Pedir Avaliação Gratuita →'}</span>
           )}
         </button>
 
