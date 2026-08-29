@@ -11,7 +11,7 @@ const IMOVEIS = [
     area: '90 m²', quartos: 2, wc: 1, piso: '2.º Andar',
     destaque: 'A 50m da escola · Elevador · Estacionamento interior',
     desc: 'T2 de 2009 a 50 metros do Centro Social do Sobralinho. Elevador, estacionamento interior e varanda com vista aberta.',
-    foto: '/imoveis/t2-sobralinho/foto_sala.jpg',
+    foto: '/imoveis/t2-sobralinho/foto_sala1.jpg',
     ref: 'MN-SBL-001', energia: 'C',
   },
   {

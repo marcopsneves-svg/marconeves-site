@@ -1,14 +1,9 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import { useGSAP } from '@gsap/react';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
 import './HomePage.css';
-
-gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const IMOVEIS_DESTAQUE = [
   {
@@ -46,76 +41,8 @@ const IMOVEIS_DESTAQUE = [
 ];
 
 export default function HomePage() {
-  const root = useRef(null);
-
-  // Reveal em scroll (GSAP + ScrollTrigger) para as secções já existentes —
-  // nenhuma imagem, texto ou classe foi removida, isto só anima a entrada.
-  // Em prefers-reduced-motion o conteúdo aparece de imediato, sem animação.
-  useGSAP(
-    () => {
-      const mm = gsap.matchMedia();
-
-      mm.add(
-        {
-          motion: '(prefers-reduced-motion: no-preference)',
-          reduced: '(prefers-reduced-motion: reduce)',
-        },
-        (context) => {
-          const { reduced } = context.conditions;
-
-          // Hero: badge → título → cargo → frase → CTAs, em cascata
-          const heroEls = ['.hero-badge', '.hero-title', '.hero-cargo', '.hero-frase', '.hero-ctas'];
-          if (reduced) {
-            gsap.set(heroEls, { opacity: 1, y: 0 });
-          } else {
-            gsap.set(heroEls, { opacity: 0, y: 22 });
-            gsap.to(heroEls, {
-              opacity: 1, y: 0, duration: 0.7, stagger: 0.12, ease: 'power2.out', delay: 0.15,
-            });
-          }
-
-          // Grupos de cards / blocos que revelam ao entrar no viewport
-          const revealGroups = [
-            { selector: '.servico-card', trigger: '.servicos-grid' },
-            { selector: '.id-card', trigger: '.imoveis-destaque-grid' },
-            { selector: '.testemunho', trigger: '.testemunhos-grid' },
-          ];
-
-          revealGroups.forEach(({ selector, trigger }) => {
-            const items = gsap.utils.toArray(selector);
-            if (!items.length) return;
-            if (reduced) {
-              gsap.set(items, { opacity: 1, y: 0 });
-              return;
-            }
-            gsap.set(items, { opacity: 0, y: 26 });
-            gsap.to(items, {
-              opacity: 1, y: 0, duration: 0.6, stagger: 0.1, ease: 'power2.out',
-              scrollTrigger: { trigger, start: 'top 82%' },
-            });
-          });
-
-          // Bloco "Sobre": foto e texto entram de lados opostos
-          if (reduced) {
-            gsap.set(['.sobre-foto', '.sobre-texto'], { opacity: 1, x: 0 });
-          } else {
-            gsap.set('.sobre-foto', { opacity: 0, x: -30 });
-            gsap.set('.sobre-texto', { opacity: 0, x: 30 });
-            gsap.to(['.sobre-foto', '.sobre-texto'], {
-              opacity: 1, x: 0, duration: 0.7, ease: 'power2.out',
-              scrollTrigger: { trigger: '.sobre-inner', start: 'top 75%' },
-            });
-          }
-        }
-      );
-
-      return () => mm.revert();
-    },
-    { scope: root }
-  );
-
   return (
-    <div className="home" ref={root}>
+    <div className="home">
       <Navbar />
 
       {/* HERO - foto fundo completo */}
