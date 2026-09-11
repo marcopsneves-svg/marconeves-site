@@ -291,6 +291,76 @@
   flex-shrink: 0;
 }
 
+/* â”€â”€ FINANCIAMENTO â”€â”€ */
+.imovel-financiamento {
+  background: var(--dark-2);
+  border-radius: 8px;
+  padding: 1.5rem;
+  border: 1px solid rgba(255,255,255,0.06);
+  margin-bottom: 2.5rem;
+}
+
+.imovel-financiamento h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--red);
+  margin-bottom: 1rem;
+  padding-bottom: 0.6rem;
+  border-bottom: 1px solid rgba(216,12,33,0.2);
+}
+
+.financ-grid { display: flex; flex-direction: column; }
+
+.financ-linha {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.55rem 0;
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  font-size: 0.84rem;
+}
+.financ-linha:last-child { border-bottom: none; }
+.financ-linha span { color: var(--white-muted); }
+.financ-linha strong { color: var(--white); font-weight: 700; text-align: right; white-space: nowrap; }
+
+.financ-destaque {
+  background: rgba(216,12,33,0.08);
+  margin: 0.3rem -0.5rem;
+  padding: 0.65rem 0.5rem;
+  border-radius: 6px;
+  border-bottom: none !important;
+}
+.financ-destaque strong { color: #ff8090; font-size: 0.95rem; }
+
+.financ-nota {
+  font-size: 0.68rem;
+  color: rgba(168,180,196,0.45);
+  line-height: 1.6;
+  margin: 1rem 0 1.2rem;
+}
+
+.financ-cta {
+  display: inline-block;
+  background: #25D366;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  padding: 0.65rem 1.2rem;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: opacity 0.2s, transform 0.15s;
+}
+.financ-cta:hover { opacity: 0.85; transform: translateY(-1px); }
+
+@media (max-width: 640px) {
+  .financ-linha { flex-wrap: wrap; }
+}
+
 /* â”€â”€ PARTILHAR â”€â”€ */
 .imovel-partilhar {
   background: var(--dark-2);

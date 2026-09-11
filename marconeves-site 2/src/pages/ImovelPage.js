@@ -3,9 +3,61 @@ import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
+import FinanciamentoSimulado from '../components/FinanciamentoSimulado';
 import './ImovelPage.css';
 
 const IMOVEIS_DADOS = {
+  't2-arcena': {
+    titulo: 'Apartamento T2 em Arcena',
+    subtitulo: 'Garagem e arrecadação · Arcena · Alverca do Ribatejo',
+    preco: '305 000 €',
+    tipo: 'T2', quartos: 2, wc: 1, area: '80 m²',
+    piso: '1.º Andar', elevador: false, estacionamento: 'Garagem · 1 lugar + arrecadação', ano: null, energia: 'D',
+    ref: 'MN-ARC-001',
+    zona: 'Arcena, Alverca do Ribatejo',
+    destaque: 'Garagem + arrecadação · Cozinha e WC melhorados · Escritório montado',
+    descricao: `Um T2 em Arcena que resolve duas das maiores dores de quem procura casa em Alverca do Ribatejo: onde estacionar o carro e onde arrumar tudo o resto.
+
+Situado na Rua João Tarré Ribeiro, este apartamento de 80 m² fica no 1.º andar de um prédio sem elevador — um único lanço de escadas, não um obstáculo real no dia a dia.
+
+O interior foi remodelado, com particular cuidado na cozinha e na casa de banho, que foram melhoradas e modernizadas. A sala é ampla e luminosa, com zona de estar e de jantar integradas, ar condicionado e cortinados que filtram bem a luz sem fechar o espaço.
+
+Tem dois quartos: o principal, com boa dimensão e roupeiro embutido, e um segundo que está atualmente organizado como escritório — secretária, estantes e boa luz natural. Cada vez mais gente trabalha, pelo menos em parte, a partir de casa, e ter este espaço já pronto é uma vantagem que poucos T2 oferecem nesta faixa de preço.
+
+A cozinha está equipada e organizada, com zona própria para refeições do dia a dia.
+
+Do lado prático, este imóvel entrega o que mais pesa nesta zona: garagem individual para 1 carro e arrecadação separada para arrumos, sem depender da rua nem perder espaço dentro de casa.
+
+Arcena fica a poucos minutos do centro de Alverca do Ribatejo, com comércio, serviços, estação de comboios e acessos rodoviários rápidos para Lisboa e para a A1.
+
+Um T2 pronto a habitar, com garagem, arrecadação e um espaço de trabalho já montado — um conjunto difícil de encontrar junto, nesta faixa de preço.`,
+    caracteristicas: [
+      '2 Quartos (1 atualmente usado como escritório)',
+      '1 Casa de banho completa',
+      'Sala ampla com zona de estar e jantar',
+      'Cozinha equipada com zona de refeições',
+      'Cozinha e casa de banho melhoradas',
+      'Ar condicionado',
+      'Garagem individual · 1 lugar',
+      'Arrecadação separada',
+      '1.º Andar',
+    ],
+    remax: 'https://www.remax.pt',
+    fotos: [
+      'foto_entrada.jpg',
+      'foto_sala1.jpg',
+      'foto_sala2.jpg',
+      'foto_cozinha1.jpg',
+      'foto_cozinha2.jpg',
+      'foto_cozinha3.jpg',
+      'foto_quarto1.jpg',
+      'foto_quarto1b.jpg',
+      'foto_escritorio1.jpg',
+      'foto_escritorio2.jpg',
+      'foto_wc.jpg',
+    ],
+    pasta: 't2-arcena',
+  },
   't2-sobralinho': {
     titulo: 'Apartamento T2 no Sobralinho',
     subtitulo: 'A 50 metros da escola · Sobralinho · Vila Franca de Xira',
@@ -355,6 +407,8 @@ export default function ImovelPage() {
                 ))}
               </div>
             </div>
+
+            <FinanciamentoSimulado preco={im.preco} refImovel={im.ref} titulo={im.titulo} />
 
             <div className="imovel-partilhar">
               <h3>Partilhar este imóvel</h3>
