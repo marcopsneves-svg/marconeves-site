@@ -6,6 +6,15 @@ import './ImoveisPage.css';
 
 const IMOVEIS = [
   {
+    id: 8, slug: 't2-arcena', tipo: 'T2', preco: '305 000 €',
+    zona: 'Alverca do Ribatejo', freguesia: 'Arcena',
+    area: '80 m²', quartos: 2, wc: 1, piso: '1.º Andar',
+    destaque: 'Garagem + arrecadação · Escritório montado · Cozinha e WC melhorados',
+    desc: 'T2 remodelado em Arcena com garagem individual, arrecadação e um dos quartos pronto a usar como escritório.',
+    foto: '/imoveis/t2-arcena/foto_sala1.jpg',
+    ref: 'MN-ARC-001', energia: 'D',
+  },
+  {
     id: 7, slug: 't2-sobralinho', tipo: 'T2', preco: '295 000 €',
     zona: 'Vila Franca de Xira', freguesia: 'Sobralinho',
     area: '90 m²', quartos: 2, wc: 1, piso: '2.º Andar',
