@@ -1,4 +1,4 @@
-.imovel-page { min-height: 100vh; background: var(--dark); }
+.imovel-page { min-height: 100vh; background: var(--dark); overflow-x: hidden; }
 
 /* â”€â”€ HERO â”€â”€ */
 .imovel-hero {
@@ -81,8 +81,19 @@
   align-items: start;
 }
 
+/* Grid/flex items default to min-width:auto, so a wide child (ex: a row of
+   thumbnails) can force its column past its fair share and push the whole
+   page into horizontal scroll. min-width:0 lets each column actually
+   respect the track width so internal overflow-x:auto (ex: thumbnails)
+   scrolls in place instead of widening the page. */
+.imovel-esq,
+.imovel-sidebar,
+.imovel-sidebar > * {
+  min-width: 0;
+}
+
 /* â”€â”€ GALERIA â”€â”€ */
-.galeria { margin-bottom: 2.5rem; }
+.galeria { margin-bottom: 2.5rem; min-width: 0; }
 
 .galeria-principal {
   position: relative;
@@ -166,6 +177,7 @@
   display: flex;
   gap: 0.5rem;
   overflow-x: auto;
+  min-width: 0;
   padding-bottom: 4px;
   scrollbar-width: thin;
   scrollbar-color: var(--red) transparent;
