@@ -3,6 +3,7 @@ import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import LeadForm from '../components/LeadForm';
+import FinanciamentoSimulado from '../components/FinanciamentoSimulado';
 import './ImovelPage.css';
 
 const IMOVEIS_DADOS = {
@@ -406,6 +407,8 @@ export default function ImovelPage() {
                 ))}
               </div>
             </div>
+
+            <FinanciamentoSimulado preco={im.preco} refImovel={im.ref} titulo={im.titulo} />
 
             <div className="imovel-partilhar">
               <h3>Partilhar este imóvel</h3>
