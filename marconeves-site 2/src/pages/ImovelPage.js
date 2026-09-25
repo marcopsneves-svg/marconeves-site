@@ -61,7 +61,7 @@ Um T2 pronto a habitar, com garagem, arrecadação e um espaço de trabalho já 
   't2-sobralinho': {
     titulo: 'Apartamento T2 no Sobralinho',
     subtitulo: 'A 50 metros da escola · Sobralinho · Vila Franca de Xira',
-    preco: '324 900 €',
+    preco: '299 000 €',
     tipo: 'T2', quartos: 2, wc: 1, area: '90 m²',
     piso: '2.º Andar', elevador: true, estacionamento: 'Interior · 1 lugar', ano: 2009, energia: 'C',
     ref: 'MN-SBL-001',

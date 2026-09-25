@@ -15,7 +15,7 @@ const IMOVEIS = [
     ref: 'MN-ARC-001', energia: 'D',
   },
   {
-    id: 7, slug: 't2-sobralinho', tipo: 'T2', preco: '324 900 €',
+    id: 7, slug: 't2-sobralinho', tipo: 'T2', preco: '299 000 €',
     zona: 'Vila Franca de Xira', freguesia: 'Sobralinho',
     area: '90 m²', quartos: 2, wc: 1, piso: '2.º Andar',
     destaque: 'A 50m da escola · Elevador · Estacionamento interior',
