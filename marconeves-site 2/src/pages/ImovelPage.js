@@ -169,7 +169,7 @@ Inclui garagem box fechada para 1 carro, elevador no prédio e zona de arrumos. 
   't3-benavente-historica': {
     titulo: 'Moradia T3 no Centro Histórico de Benavente',
     subtitulo: 'Terraço com vista para a Lezíria · Centro Histórico · Benavente',
-    preco: '300 000 €',
+    preco: '295 000 €',
     tipo: 'T3', quartos: 3, wc: 2, area: '97 m²',
     piso: 'Moradia 2 Pisos', elevador: false, estacionamento: 'Não', ano: null, energia: 'D',
     ref: 'MN-BNV-001',

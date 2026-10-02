@@ -33,7 +33,7 @@ const IMOVEIS = [
     ref: 'MN-VFX-002', energia: 'C',
   },
   {
-    id: 5, slug: 't3-benavente-historica', tipo: 'T3', preco: '300 000 €',
+    id: 5, slug: 't3-benavente-historica', tipo: 'T3', preco: '295 000 €',
     zona: 'Benavente', freguesia: 'Centro Histórico',
     area: '97 m²', quartos: 3, wc: 2, piso: 'Moradia 2 Pisos',
     destaque: 'Terraço com vista Lezíria · A10 a 5 min · Suite',
