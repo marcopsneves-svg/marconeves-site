@@ -6,6 +6,194 @@ import './BlogPage.css';
 
 export const ARTIGOS = [
   {
+    slug: 'garantia-publica-jovens-2027-credito-habitacao',
+    titulo: 'Garantia Pública em 2027: O Crédito a 100% Para Jovens Vai Continuar?',
+    resumo: 'O relatório do Orçamento do Estado para 2027 diz que a garantia pública para a primeira casa "manter-se-á". Mas há um detalhe que poucos estão a explicar — e que pode mudar a sua decisão de compra nos próximos meses.',
+    data: '9 de Outubro de 2026',
+    leitura: '6 min',
+    categoria: 'Comprar',
+    cor: '#051d40',
+    conteudo: `
+## O que é a garantia pública, em 30 segundos
+
+Normalmente, os bancos financiam até 90% do valor da casa. Os outros 10% — a entrada — saem do bolso do comprador. Numa casa de 250.000€, são 25.000€.
+
+Com a garantia pública, **o Estado fica como fiador de até 15% do empréstimo**, durante 10 anos. Isso permite ao banco financiar **até 100%** do valor do imóvel.
+
+Não é um subsídio nem um desconto: deve o valor total e paga juros sobre ele. Mas elimina a maior barreira de quem quer comprar casa jovem — juntar a entrada.
+
+## O que diz o OE2027 — e o que ainda não diz
+
+O relatório da proposta de Orçamento para 2027 afirma que "manter-se-á a garantia pública na compra da primeira habitação", a par das isenções de IMT e Imposto do Selo.
+
+**O detalhe que importa:** a proposta de Orçamento, por si só, não prolonga a garantia. As regras actuais só abrangem contratos de crédito **assinados até 31 de dezembro de 2026**. A continuação em 2027 depende de um diploma próprio, ainda não aprovado. O próprio ministro das Finanças, Joaquim Miranda Sarmento, disse que a experiência "tem sido positiva", mas que "a decisão final ainda não foi tomada formalmente".
+
+Traduzindo: **a intenção política existe, mas a regra ainda não está publicada.** Não dou isto como garantido — e não aconselho nenhum cliente a fazê-lo.
+
+## Os números que mostram porque é provável continuar
+
+- **Quase 120 mil jovens** já beneficiaram das medidas de apoio à primeira casa (garantia e isenções), com um valor médio de compra de cerca de 200 mil euros
+- As responsabilidades do Estado com estas garantias passaram de 449 milhões de euros no final de 2025 para **cerca de 926 milhões em maio de 2026**
+- O Governo estima um **risco de incumprimento reduzido**, com base no histórico
+
+Uma medida com esta adesão e baixo risco dificilmente desaparece de um dia para o outro. Mas "dificilmente" não é "certamente".
+
+## Quem pode usar a garantia (regras actuais)
+
+→ Ter entre 18 e 35 anos
+
+→ Comprar a primeira habitação própria e permanente
+
+→ Imóvel até 450.000€ (conta o menor valor entre o preço e a avaliação bancária)
+
+→ Rendimento colectável até ao 8.º escalão de IRS (86.634€ em 2026; em casal conta o quociente conjugal)
+
+→ Domicílio fiscal em Portugal
+
+→ Nunca ter sido proprietário de habitação nem ter usado antes esta garantia
+
+→ Sem dívidas às Finanças ou à Segurança Social
+
+E o ponto que muitos esquecem: **a decisão final é sempre do banco**. A garantia resolve a entrada, não resolve a taxa de esforço. O Banco de Portugal recomenda uma taxa de esforço máxima de 45%, testada com uma subida de 1,5 pontos na taxa de juro.
+
+## Um exemplo real: T2 de 250.000€ em Vila Franca de Xira
+
+Um jovem de 30 anos compra um T2 de 250.000€ e junta as duas medidas.
+
+**Sem apoios:**
+
+- Entrada (10%): 25.000€
+- IMT + Imposto do Selo: cerca de 8.800€
+- **Dinheiro necessário à cabeça: cerca de 33.800€ + despesas**
+
+**Com garantia pública + IMT Jovem:**
+
+- Entrada: 0€
+- IMT + Imposto do Selo: 0€
+- **Dinheiro necessário à cabeça: apenas despesas (cerca de 1.500€ a 3.000€)**
+
+A diferença é enorme. Mas há um custo: financiar 100% em vez de 90% aumenta a prestação e os juros totais. Numa casa de 200.000€, com crédito a 40 anos e taxa de 3,5%, a prestação passa de cerca de 697€ (com 10% de entrada) para cerca de 775€ (a 100%) — e os juros totais sobem cerca de 17.000€.
+
+**A garantia é uma ferramenta, não uma obrigação.** Se tiver parte da entrada, use-a. Se não tiver, a garantia permite comprar agora em vez de pagar renda mais cinco anos.
+
+## O que fazer já, se está a pensar comprar
+
+**1. Não espere pela confirmação para se preparar.** Peça já uma pré-aprovação. Saber o seu limite real de crédito leva dias e é o que separa quem compra de quem perde a casa para outro comprador.
+
+**2. Se o imóvel já está escolhido, aponte para escriturar até 31 de dezembro de 2026.** É a única data com cobertura certa neste momento.
+
+**3. Confirme se cumpre os requisitos das duas medidas** — garantia e IMT Jovem. Os limites de valor são diferentes (450.000€ na garantia, 338.141€ na isenção total de IMT proposta para 2027).
+
+## E se é proprietário?
+
+A procura jovem é o motor do mercado entre os 150 e os 350 mil euros na nossa zona. Com a garantia e o IMT Jovem a manterem-se, estes compradores continuam a chegar com financiamento a 100% e sem impostos de compra.
+
+Se tem um imóvel neste segmento em Vila Franca de Xira, Alverca, Póvoa de Santa Iria ou Alhandra, o momento de o preparar para este comprador é agora — e não quando a concorrência já estiver toda à venda em janeiro.
+
+---
+
+**Quer saber quanto vale o seu imóvel para este comprador, ou quanto pode pedir ao banco?** Peça a sua Avaliação Gratuita ou fale comigo pelo WhatsApp — respondo pessoalmente.
+
+*Informação baseada na proposta de Orçamento do Estado para 2027 e nas regras da garantia pública em vigor (outubro de 2026). Este artigo será actualizado quando a prorrogação for publicada.*
+    `
+  },
+  {
+    slug: 'imt-jovem-2027-isencao-orcamento-estado',
+    titulo: 'IMT Jovem 2027: A Isenção Continua e o Limite Sobe Para 338.141€',
+    resumo: 'A proposta de Orçamento do Estado para 2027 mantém a isenção de IMT e Imposto do Selo para quem tem até 35 anos e compra a primeira casa — e actualiza os limites. O que muda, quem tem direito e quanto pode poupar, com exemplos reais de Vila Franca de Xira.',
+    data: '9 de Outubro de 2026',
+    leitura: '5 min',
+    categoria: 'Comprar',
+    cor: '#d80c21',
+    conteudo: `
+## O que diz a proposta do OE2027
+
+O Governo entregou a proposta de Orçamento do Estado para 2027 e o relatório é claro: as isenções de IMT e Imposto do Selo na compra da primeira habitação própria e permanente por jovens mantêm-se.
+
+A novidade está nos valores. Os escalões do IMT são actualizados em 2,3%, o que empurra os limites da isenção para cima.
+
+**Isenção total de IMT e Imposto do Selo:**
+
+- 2026 (em vigor): até 330.539€
+- **2027 (proposta): até 338.141€**
+
+**Isenção parcial (8% só sobre o valor que excede o limite):**
+
+- 2026 (em vigor): até 660.982€
+- **2027 (proposta): até 676.185€**
+
+Acima destes valores, não há qualquer benefício.
+
+Em termos práticos: uma casa de 335.000€ comprada hoje por um jovem paga cerca de 393€ entre IMT e Imposto do Selo. Com a proposta para 2027, paga zero.
+
+**Nota importante:** isto é uma proposta. O OE2027 é votado na generalidade a 28 de outubro e em votação final global a 24 de novembro. Os valores podem ainda ser ajustados no Parlamento.
+
+## Quem tem direito
+
+A isenção aplica-se se cumprir todas estas condições na data da escritura:
+
+→ Ter 35 anos ou menos
+
+→ Comprar para habitação própria e permanente (é ali que vai viver)
+
+→ Não ser, nem ter sido nos três anos anteriores, proprietário de um imóvel habitacional
+
+→ Não ser dependente de outra pessoa para efeitos de IRS no ano da compra
+
+**Compra a dois?** Se só um dos compradores cumprir os requisitos, a isenção aplica-se apenas à quota-parte dessa pessoa. Este é o erro que mais vejo: casais em que um tem 36 anos e contam com a isenção total. Não têm. Faça as contas antes de assinar o CPCV.
+
+## Quanto se poupa, na prática
+
+Vamos ao concreto, com valores típicos de Vila Franca de Xira, Alverca e Póvoa de Santa Iria.
+
+**Exemplo 1 — T2 de 250.000€ em Alverca**
+
+- Comprador com 36 anos (regras gerais, escalões propostos para 2027): cerca de 6.800€ de IMT + 2.000€ de Imposto do Selo — **perto de 8.800€**
+- Comprador com 32 anos (IMT Jovem): **0€**
+
+São quase 9.000€ que ficam no bolso — o equivalente a uma cozinha nova ou a um ano de prestações de muitos créditos.
+
+**Exemplo 2 — Moradia de 400.000€ na Póvoa de Santa Iria**
+
+- Com IMT Jovem em 2027, paga 8% apenas sobre a parte acima de 338.141€ (61.859€): cerca de **4.950€ de IMT + 495€ de Imposto do Selo**
+- Sem isenção, a factura seria várias vezes superior
+
+*Valores indicativos, calculados com os escalões da proposta. O imposto incide sobre o maior valor entre o preço de compra e o VPT (valor patrimonial tributário).*
+
+## Atenção: o que a isenção não cobre
+
+A isenção não elimina todos os custos de compra. Continuam a existir:
+
+- Emolumentos de escritura e registo (salvo enquadramento específico)
+- Avaliação bancária e comissões de abertura do crédito
+- Seguros de vida e multirriscos
+
+Em regra, conte com 1.500€ a 3.000€ para estas despesas, dependendo do banco e do imóvel.
+
+E para quem não é jovem: o limite de isenção de IMT na habitação própria e permanente também sobe, de 106.346€ para **108.792€**.
+
+## Para quem está a pensar vender
+
+Este artigo não é só para compradores.
+
+Se tem um T2 ou T3 em Vila Franca de Xira, Alverca, Alhandra ou Póvoa abaixo dos 338 mil euros, o seu imóvel está exactamente no segmento onde a procura jovem vai continuar forte em 2027. Segundo o relatório do OE, estas medidas já beneficiaram quase 120 mil jovens, com um valor médio de compra de cerca de 200 mil euros.
+
+Isto tem uma consequência directa no preço: compradores que não pagam IMT nem Imposto do Selo têm mais margem para pagar o valor pedido. Um imóvel bem posicionado neste intervalo vende mais depressa — e com menos negociação.
+
+A pergunta certa não é "devo vender?". É: **"o meu imóvel está posicionado para este comprador?"** Preço, fotografias, documentação pronta para uma escritura rápida — tudo isso conta.
+
+## Conclusão
+
+O IMT Jovem mantém-se em 2027 e fica ligeiramente mais generoso. Para quem tem até 35 anos, comprar uma casa até 338.141€ continua a significar zero IMT e zero Imposto do Selo. Para quem vende neste segmento, significa um mercado com compradores motivados e financeiramente mais capazes.
+
+---
+
+**Está a comprar?** Faça a simulação antes de escolher o imóvel — use a página Viabilidade de Crédito. **Está a vender?** Peça a sua Avaliação Gratuita e saiba quanto vale o seu imóvel aos olhos deste comprador.
+
+*Informação baseada na proposta de Orçamento do Estado para 2027 (outubro de 2026). Não dispensa a confirmação junto das Finanças ou de um profissional para o seu caso concreto.*
+    `
+  },
+  {
     slug: 'precos-casas-portugal-2025-subida-recorde',
     titulo: 'Casas em Portugal Subiram 16,8% em 2025: O Que Isto Significa Para Si',
     resumo: 'O INE confirmou na semana passada: o preço mediano das casas em Portugal atingiu os 2.076€/m² em 2025, com uma subida de 16,8% face ao ano anterior. Perceba o que estes números significam para quem quer vender ou comprar — e porque é que estar bem informado vale dinheiro.',
