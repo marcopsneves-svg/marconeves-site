@@ -38,7 +38,7 @@ const IMOVEIS = [
     area: '97 m²', quartos: 3, wc: 2, piso: 'Moradia 2 Pisos',
     destaque: 'Terraço · Sala com lareira · A10 a 6 min · Suite',
     desc: 'Moradia com carácter no centro histórico de Benavente, a menos de 400 m do Pelourinho. Terraço, sala com lareira e suite. A 38 min do Aeroporto de Lisboa (de carro, sem trânsito).',
-    foto: '/imoveis/t3-benavente-historica/fot_fachada.jpg',
+    foto: '/imoveis/t3-benavente-historica/fachada.jpg',
     ref: '121981481-15', energia: 'E',
   },
   {
