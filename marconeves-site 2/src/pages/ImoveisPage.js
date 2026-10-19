@@ -36,10 +36,10 @@ const IMOVEIS = [
     id: 5, slug: 't3-benavente-historica', tipo: 'T3', preco: '295 000 €',
     zona: 'Benavente', freguesia: 'Centro Histórico',
     area: '97 m²', quartos: 3, wc: 2, piso: 'Moradia 2 Pisos',
-    destaque: 'Terraço com vista Lezíria · A10 a 5 min · Suite',
-    desc: 'Moradia com carácter no coração histórico de Benavente. Terraço com vista desafogada para a Lezíria do Tejo. A ~35 min do Aeroporto de Lisboa.',
+    destaque: 'Terraço · Sala com lareira · A10 a 6 min · Suite',
+    desc: 'Moradia com carácter no centro histórico de Benavente, a menos de 400 m do Pelourinho. Terraço, sala com lareira e suite. A 38 min do Aeroporto de Lisboa (de carro, sem trânsito).',
     foto: '/imoveis/t3-benavente-historica/fot_fachada.jpg',
-    ref: 'MN-BNV-001', energia: 'D',
+    ref: '121981481-15', energia: 'E',
   },
   {
     id: 1, slug: 't3-povos', tipo: 'T3', preco: '290 000 €',

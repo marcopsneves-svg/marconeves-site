@@ -168,20 +168,20 @@ Inclui garagem box fechada para 1 carro, elevador no prédio e zona de arrumos. 
   },
   't3-benavente-historica': {
     titulo: 'Moradia T3 no Centro Histórico de Benavente',
-    subtitulo: 'Terraço com vista para a Lezíria · Centro Histórico · Benavente',
+    subtitulo: 'Terraço · Sala com lareira · Centro Histórico · Benavente',
     preco: '295 000 €',
     tipo: 'T3', quartos: 3, wc: 2, area: '97 m²',
-    piso: 'Moradia 2 Pisos', elevador: false, estacionamento: 'Não', ano: null, energia: 'D',
-    ref: 'MN-BNV-001',
+    piso: 'Moradia 2 Pisos', elevador: false, estacionamento: 'Não', ano: null, energia: 'E',
+    ref: '121981481-15',
     zona: 'Centro Histórico, Benavente',
-    destaque: 'Terraço com vista Lezíria · Suite · A10 a 5 min · Aeroporto a ~35 min',
-    descricao: `Uma moradia com carácter, localizada no coração histórico de Benavente — a metros da Câmara Municipal, do Largo Municipal e do Cineteatro.
+    destaque: 'Terraço · Sala com lareira · Suite · A10 a 6 min · Aeroporto a 38 min',
+    descricao: `Uma moradia com carácter, localizada no centro histórico de Benavente, a menos de 400 m do Pelourinho.
 
-Dois pisos, 97 m², 3 quartos (um deles em suite), sala com lareira, cozinha equipada, 2 casas de banho e um terraço com vista desafogada para a Lezíria do Tejo.
+Dois pisos, 97 m², 3 quartos (um deles em suite), sala com lareira, cozinha equipada, 2 casas de banho e um terraço para os dias longos de verão.
 
 A casa dispõe de dois acessos independentes: entrada direta pela rua e uma segunda entrada pela cozinha — uma característica típica do casario histórico português.
 
-A 5 minutos da A10, quem aqui vive chega ao Aeroporto Humberto Delgado em aproximadamente 35 minutos. Lisboa está mais perto do que parece.
+A 6 minutos da A10, quem aqui vive chega a Lisboa (Gare do Oriente) em 41 minutos e ao Aeroporto Humberto Delgado em 38 minutos, de carro e sem trânsito. Lisboa está mais perto do que parece.
 
 Benavente oferece tudo o que uma família precisa: centro de saúde, rede escolar completa, comércio de proximidade, restaurantes com gastronomia ribatejana autêntica, Parque Ribeirinho do Sorraia, Cais da Vala Nova para desportos náuticos e um centro histórico com identidade própria.
 
@@ -191,12 +191,12 @@ Qualidade de vida real. Sem abrir mão da cidade.`,
       '2 Casas de banho',
       'Sala com lareira',
       'Cozinha equipada',
-      'Terraço com vista para a Lezíria do Tejo',
+      'Terraço',
       '2 entradas independentes',
       'Moradia de 2 pisos',
       'Centro histórico de Benavente',
-      'A10 a 5 minutos',
-      'Aeroporto de Lisboa a ~35 min',
+      'A10 a 6 minutos',
+      'Aeroporto de Lisboa a 38 min',
     ],
     remax: 'https://www.remax.pt',
     fotos: [

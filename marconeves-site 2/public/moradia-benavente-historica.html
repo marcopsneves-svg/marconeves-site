@@ -3,15 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Moradia T3 Centro Histórico Benavente | Marco Neves RE/MAX</title>
-  <meta name="description" content="Moradia T3 no centro histórico de Benavente. 97m², terraço com vista para a Lezíria, suite, 2 entradas. A 5 min da A10 e 35 min do Aeroporto de Lisboa. 300.000€." />
+  <title>Moradia T3 Centro Histórico Benavente · 295 000 € | Marco Neves RE/MAX</title>
+  <meta name="description" content="Moradia T3 no centro histórico de Benavente: 97 m², terraço, sala com lareira, suite e 2 WC. A10 a 6 min e Lisboa a 41 min. Novo preço: 295 000 €. Classe energética E." />
   <meta name="robots" content="index, follow" />
 
   <!-- Open Graph -->
-  <meta property="og:title" content="Moradia T3 | Centro Histórico de Benavente | 300.000€" />
-  <meta property="og:description" content="97m², terraço com vista para a Lezíria, suite, A10 a 5 min, Lisboa a 35 min. Entre em contacto." />
+  <meta property="og:title" content="Moradia T3 | Centro Histórico de Benavente | 295 000 €" />
+  <meta property="og:description" content="97 m², terraço, sala com lareira e suite. A10 a 6 min, Lisboa a 41 min. Visitas por marcação." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://www.marconevesimobiliario.com/moradia-benavente-historica" />
+  <meta property="og:image" content="https://www.marconevesimobiliario.com/imoveis/t3-benavente-historica/lp/02-sala.jpg" />
   <meta property="og:locale" content="pt_PT" />
 
   <!-- Google Tag Manager -->
@@ -399,23 +400,132 @@
     }
     .footer-links a:hover { color: var(--white); }
 
+    /* ── PREÇO, BOTÕES E REFERÊNCIA (HERO) ── */
+    .hero-price-tag {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 6px;
+    }
+    .hero-price-old {
+      display: block;
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: rgba(255,255,255,0.5);
+      text-decoration: line-through;
+      text-decoration-color: var(--red);
+      text-decoration-thickness: 2px;
+    }
+    .hero-actions {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 14px;
+    }
+    .btn-sec {
+      display: inline-block;
+      color: var(--white);
+      border: 1px solid rgba(255,255,255,0.35);
+      padding: 12px 22px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 0.92rem;
+    }
+    .btn-sec:hover { border-color: var(--white); }
+    .hero-ref {
+      display: block;
+      margin-top: 22px;
+      font-size: 0.75rem;
+      color: rgba(255,255,255,0.45);
+    }
+
+    /* ── FOTOS E VÍDEO ── */
+    .galeria-video {
+      max-width: 360px;
+      margin: 28px auto 0;
+    }
+    .galeria-video video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 9 / 16;
+      border-radius: 8px;
+      background: var(--navy);
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 14px;
+      margin-top: 28px;
+    }
+    @media (min-width: 720px) {
+      .galeria { grid-template-columns: 1fr 1fr; }
+      .galeria .alta { grid-row: span 2; }
+    }
+    .galeria figure {
+      background: var(--white);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .galeria img {
+      display: block;
+      width: 100%;
+      height: auto;
+    }
+    .galeria .alta img {
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+    }
+    .galeria figcaption {
+      font-size: 0.85rem;
+      color: #374151;
+      padding: 10px 14px;
+    }
+    .nota-tempos {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-top: 14px;
+    }
+    .form-alt {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      text-align: center;
+      margin-top: 18px;
+    }
+    .form-alt a { color: var(--navy); font-weight: 600; }
+
     /* ── STICKY CTA MOBILE ── */
     .sticky-cta {
       display: none;
       position: fixed;
       bottom: 0; left: 0; right: 0;
-      background: var(--red);
+      z-index: 100;
+    }
+    .sticky-cta a {
+      flex: 1;
       color: var(--white);
       text-align: center;
-      padding: 16px;
+      padding: 16px 8px;
       font-weight: 600;
       font-size: 0.95rem;
       text-decoration: none;
-      z-index: 100;
       letter-spacing: 0.02em;
     }
+    .sticky-cta .ligar { background: var(--navy-mid); }
+    .sticky-cta .whatsapp { background: var(--red); }
     @media (max-width: 640px) {
-      .sticky-cta { display: block; }
+      .sticky-cta { display: flex; }
+      .hero { padding: 32px 20px 44px; }
+      .hero h1 { margin-bottom: 14px; }
+      .hero-sub { margin-bottom: 22px; }
+      .hero-price-label { margin-bottom: 22px; }
+      .hero-pills { margin-bottom: 26px; }
+      .hero-actions { display: none; }
       .form-row { grid-template-columns: 1fr; }
       body { padding-bottom: 60px; }
     }
@@ -449,9 +559,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- HERO -->
 <section class="hero">
   <div class="hero-eyebrow">📍 Centro Histórico · Benavente · Santarém</div>
-  <h1>Moradia T3 com terraço e <em>vista para a Lezíria</em></h1>
-  <p class="hero-sub">A 5 minutos da A10 e a aproximadamente 35 minutos do Aeroporto de Lisboa. Qualidade de vida real, sem abrir mão da cidade.</p>
-  <div class="hero-price">300.000 €</div>
+  <h1>Moradia T3 com terraço no <em>centro histórico</em> de Benavente</h1>
+  <p class="hero-sub">A 6 minutos da A10, a 41 minutos de Lisboa e a 38 minutos do Aeroporto de Lisboa (de carro, sem trânsito). Qualidade de vida real, sem abrir mão da cidade.</p>
+  <span class="hero-price-tag">Novo preço</span>
+  <span class="hero-price-old">300 000 €</span>
+  <div class="hero-price">295&nbsp;000&nbsp;€</div>
   <span class="hero-price-label">Preço de venda</span>
   <div class="hero-pills">
     <span class="pill">T3 · 97 m²</span>
@@ -459,18 +571,48 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <span class="pill">1 Suite</span>
     <span class="pill">2 WC</span>
     <span class="pill">Terraço</span>
+    <span class="pill">Sala com lareira</span>
     <span class="pill">2 Entradas</span>
+    <span class="pill">Classe energética E</span>
   </div>
   <a href="#contacto" class="hero-cta">Quero agendar visita</a>
+  <div class="hero-actions">
+    <a href="tel:+351969692793" class="btn-sec" data-evento="clique_telefone">📞 Ligar 969 692 793</a>
+    <a href="https://wa.me/351969692793?text=Ol%C3%A1%20Marco%2C%20vi%20a%20moradia%20T3%20em%20Benavente%20(295%20000%20%E2%82%AC)%20e%20gostava%20de%20marcar%20uma%20visita." class="btn-sec" target="_blank" rel="noopener" data-evento="clique_whatsapp">💬 WhatsApp</a>
+  </div>
+  <span class="hero-ref">Ref. RE/MAX 121981481-15 · Classe energética E</span>
 </section>
 
 <div class="divider"></div>
+
+<!-- FOTOS E VÍDEO -->
+<section class="section" id="fotos">
+  <div class="section-label">A casa</div>
+  <h2>Veja a moradia por dentro</h2>
+  <p>Fotos reais da casa, sem retoques, e o vídeo com a casa e a vila.</p>
+  <div class="galeria-video">
+    <video controls playsinline preload="none" poster="/imoveis/t3-benavente-historica/lp/video-capa.jpg">
+      <source src="/imoveis/t3-benavente-historica/lp/video-moradia-benavente.mp4" type="video/mp4" />
+    </video>
+  </div>
+  <div class="galeria">
+    <figure><img src="/imoveis/t3-benavente-historica/lp/02-sala.jpg" alt="Sala com lareira" width="1600" height="900" loading="lazy" /><figcaption>Sala com lareira</figcaption></figure>
+    <figure class="alta"><img src="/imoveis/t3-benavente-historica/lp/05-suite.jpg" alt="Suite com roupeiro e casa de banho privativa" width="900" height="1600" loading="lazy" /><figcaption>Suite com casa de banho privativa</figcaption></figure>
+    <figure><img src="/imoveis/t3-benavente-historica/lp/03-cozinha.jpg" alt="Cozinha equipada" width="1600" height="900" loading="lazy" /><figcaption>Cozinha equipada</figcaption></figure>
+    <figure><img src="/imoveis/t3-benavente-historica/lp/04-quarto.jpg" alt="Quarto" width="1600" height="900" loading="lazy" /><figcaption>Quarto</figcaption></figure>
+    <figure><img src="/imoveis/t3-benavente-historica/lp/06-casa-de-banho.jpg" alt="Casa de banho com cabine de duche" width="1600" height="900" loading="lazy" /><figcaption>Casa de banho</figcaption></figure>
+    <figure><img src="/imoveis/t3-benavente-historica/lp/07-terraco.jpg" alt="Terraço" width="1600" height="900" loading="lazy" /><figcaption>Terraço</figcaption></figure>
+    <figure><img src="/imoveis/t3-benavente-historica/lp/01-fachada.jpg" alt="Fachada da moradia" width="1600" height="900" loading="lazy" /><figcaption>Fachada</figcaption></figure>
+  </div>
+</section>
+
+<hr class="separator" />
 
 <!-- SOBRE O IMÓVEL -->
 <section class="section">
   <div class="section-label">O imóvel</div>
   <h2>Uma moradia com carácter no coração de Benavente</h2>
-  <p>Localizada a metros da Câmara Municipal, do Largo Municipal e do Cineteatro, esta moradia combina a autenticidade do casario histórico português com uma vista que poucos imóveis conseguem oferecer — <strong>o terraço com vista desafogada para a Lezíria do Tejo</strong>.</p>
+  <p>Localizada no centro histórico de Benavente, a menos de 400 m do Pelourinho, esta moradia combina a autenticidade do casario histórico português com o espaço de uma casa de dois pisos — <strong>sala com lareira, suite e um terraço para os dias longos de verão</strong>.</p>
   <p>Dois acessos independentes: entrada direta pela rua e uma segunda entrada pela cozinha — uma característica típica da arquitetura histórica local.</p>
 
   <div class="features-grid">
@@ -495,16 +637,27 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="value">2 WC</div>
     </div>
     <div class="feature-card">
-      <span class="icon">🌿</span>
-      <div class="label">Terraço</div>
-      <div class="value">Vista Lezíria</div>
+      <span class="icon">🔥</span>
+      <div class="label">Sala</div>
+      <div class="value">Com lareira</div>
+    </div>
+    <div class="feature-card">
+      <span class="icon">☀️</span>
+      <div class="label">Exterior</div>
+      <div class="value">Terraço</div>
+    </div>
+    <div class="feature-card">
+      <span class="icon">⚡</span>
+      <div class="label">Classe energética</div>
+      <div class="value">E</div>
     </div>
     <div class="feature-card">
       <span class="icon">🚗</span>
-      <div class="label">Aeroporto Lisboa</div>
-      <div class="value">~35 minutos</div>
+      <div class="label">Aeroporto de Lisboa</div>
+      <div class="value">38 minutos</div>
     </div>
   </div>
+  <p class="nota-tempos">Tempos de carro, sem trânsito.</p>
 </section>
 
 <hr class="separator" />
@@ -516,22 +669,28 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <p>Uma vila com identidade própria, gastronomia de raiz ribatejana e uma paisagem natural única. Tudo o que uma família precisa, a poucos minutos de casa.</p>
 
   <ul class="bullet-list">
-    <li><span class="emoji">🏥</span> Centro de Saúde e serviços médicos locais</li>
-    <li><span class="emoji">🏫</span> Rede escolar completa — do pré-escolar ao secundário</li>
-    <li><span class="emoji">🛒</span> Comércio de proximidade e supermercados</li>
+    <li><span class="emoji">🏥</span> Centro de Saúde a 2 min</li>
+    <li><span class="emoji">🏫</span> Escola básica a 2 min — rede escolar do pré-escolar ao secundário</li>
+    <li><span class="emoji">🛒</span> Supermercado a 2 min e farmácia a 1 min</li>
     <li><span class="emoji">🍽️</span> Gastronomia ribatejana autêntica</li>
     <li><span class="emoji">🌿</span> Parque Ribeirinho do Sorraia — lazer e ciclismo</li>
     <li><span class="emoji">🚣</span> Cais da Vala Nova — desportos náuticos</li>
     <li><span class="emoji">🎭</span> Cineteatro Municipal</li>
     <li><span class="emoji">🏛️</span> Centro histórico com identidade própria</li>
     <li><span class="emoji">🚌</span> Ligações regulares a Lisboa</li>
-    <li><span class="emoji">🛣️</span> A10 a 5 min · Aeroporto a ~35 min</li>
+    <li><span class="emoji">🛣️</span> A10 a 6 min · Lisboa (Oriente) a 41 min · Aeroporto a 38 min</li>
   </ul>
+  <p class="nota-tempos">Tempos de carro, sem trânsito.</p>
+
+  <div class="galeria">
+    <figure><img src="/imoveis/t3-benavente-historica/lp/08-lezirias.jpg" alt="Benavente e as lezírias vistas do ar" width="1600" height="900" loading="lazy" /><figcaption>A vila e as lezírias</figcaption></figure>
+    <figure><img src="/imoveis/t3-benavente-historica/lp/09-benavente.jpg" alt="Benavente vista do ar" width="1600" height="900" loading="lazy" /><figcaption>Benavente vista do ar</figcaption></figure>
+  </div>
 </section>
 
 <!-- HIGHLIGHT BAND -->
 <div class="highlight-band">
-  <p>Para quem trabalha em Lisboa mas recusa viver sem <em>espaço, vista e sossego.</em></p>
+  <p>Espaço de moradia, calma de vila <em>e a A10 logo ali.</em></p>
 </div>
 
 <!-- FORMULÁRIO -->
@@ -551,7 +710,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <input type="hidden" name="_subject" value="🏠 Novo lead — Moradia T3 Benavente" />
       <input type="hidden" name="_next" value="https://www.marconevesimobiliario.com/moradia-benavente-historica?obrigado=1" />
       <input type="hidden" name="_captcha" value="false" />
-      <input type="hidden" name="Imóvel" value="Moradia T3 Centro Histórico Benavente — 300.000€" />
+      <input type="hidden" name="Imóvel" value="Moradia T3 Centro Histórico Benavente — 295 000 € (ref. 121981481-15)" />
       <input type="text" name="_honey" style="display:none" />
 
       <div class="form-row">
@@ -566,8 +725,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       </div>
 
       <div>
-        <label for="email">Email *</label>
-        <input type="email" id="email" name="Email" placeholder="o.seu@email.com" required />
+        <label for="email">Email (opcional)</label>
+        <input type="email" id="email" name="Email" placeholder="o.seu@email.com" />
       </div>
 
       <div>
@@ -587,6 +746,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="success-msg" id="success-msg">
       ✅ Mensagem enviada! Marco Neves entra em contacto consigo em breve.
     </div>
+
+    <p class="form-alt">Prefere falar já? Ligue para o <a href="tel:+351969692793" data-evento="clique_telefone">969 692 793</a> ou envie <a href="https://wa.me/351969692793?text=Ol%C3%A1%20Marco%2C%20vi%20a%20moradia%20T3%20em%20Benavente%20(295%20000%20%E2%82%AC)%20e%20gostava%20de%20marcar%20uma%20visita." target="_blank" rel="noopener" data-evento="clique_whatsapp">WhatsApp</a>.</p>
   </div>
 </section>
 
@@ -594,38 +755,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <footer class="footer">
   <div class="footer-brand">Marco Neves <span>|</span> RE/MAX Grupo Vantagem</div>
   <div class="footer-sub">AMI 7772 · Consultor Imobiliário · Vila Franca de Xira e Benavente</div>
+  <div class="footer-sub">Moradia T3 · Ref. 121981481-15 · Classe energética E</div>
   <div class="footer-links">
     <a href="https://www.marconevesimobiliario.com">Website</a>
     <a href="https://www.marconevesimobiliario.com/imoveis">Imóveis</a>
-    <a href="https://wa.me/351969692793" target="_blank">WhatsApp</a>
+    <a href="https://wa.me/351969692793" target="_blank" rel="noopener" data-evento="clique_whatsapp">WhatsApp</a>
     <a href="https://www.instagram.com/marco_neves_real_estate" target="_blank">Instagram</a>
   </div>
 </footer>
 
 <!-- STICKY CTA MOBILE -->
-<a href="#contacto" class="sticky-cta">📲 Quero agendar visita</a>
+<nav class="sticky-cta">
+  <a href="tel:+351969692793" class="ligar" data-evento="clique_telefone">📞 Ligar</a>
+  <a href="https://wa.me/351969692793?text=Ol%C3%A1%20Marco%2C%20vi%20a%20moradia%20T3%20em%20Benavente%20(295%20000%20%E2%82%AC)%20e%20gostava%20de%20marcar%20uma%20visita." class="whatsapp" target="_blank" rel="noopener" data-evento="clique_whatsapp">💬 WhatsApp</a>
+</nav>
 
 <script>
-  // Meta Pixel — Lead event no submit
-  document.getElementById('lead-form').addEventListener('submit', function() {
-    if (typeof fbq !== 'undefined') {
-      fbq('track', 'Lead', {
-        content_name: 'Moradia T3 Benavente',
-        content_category: 'Imobiliário',
-        value: 300000,
-        currency: 'EUR'
-      });
-    }
-  });
+  // Eventos para o Google Tag Manager (conversões do Google Ads) e para o Meta Pixel.
+  // O formulário envia para o FormSubmit, que volta a esta página com ?obrigado=1: o contacto conta-se aí,
+  // uma só vez (antes contava-se também no clique em «enviar», o que duplicava os contactos no Meta).
+  window.dataLayer = window.dataLayer || [];
 
-  // Mostrar mensagem de sucesso se URL tiver ?obrigado=1
   if (window.location.search.includes('obrigado=1')) {
     document.getElementById('lead-form').style.display = 'none';
     document.getElementById('success-msg').style.display = 'block';
+    window.dataLayer.push({ event: 'lead_formulario', imovel: 't3-benavente-historica' });
     if (typeof fbq !== 'undefined') {
-      fbq('track', 'Lead');
+      fbq('track', 'Lead', { content_name: 'Moradia T3 Benavente', content_category: 'Imobiliário' });
     }
   }
+
+  // Cliques em «Ligar» e «WhatsApp»
+  document.querySelectorAll('[data-evento]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      window.dataLayer.push({ event: a.getAttribute('data-evento'), imovel: 't3-benavente-historica' });
+      if (typeof fbq !== 'undefined') fbq('track', 'Contact');
+    });
+  });
 </script>
 
 </body>
