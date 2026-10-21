@@ -1,9 +1,72 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
+import FontePreferidaGoogle from '../components/FontePreferidaGoogle';
 import { ARTIGOS } from './BlogPage';
 import './ArtigoPage.css';
+
+const SITE = 'https://www.marconevesimobiliario.com';
+const MESES = ['janeiro', 'fevereiro', 'março', 'abril', 'maio', 'junho', 'julho', 'agosto', 'setembro', 'outubro', 'novembro', 'dezembro'];
+
+// "9 de Outubro de 2026" -> "2026-10-09"
+function dataISO(texto) {
+  const m = /(\d{1,2}) de (\S+) de (\d{4})/i.exec(texto || '');
+  if (!m) return undefined;
+  const mes = MESES.indexOf(m[2].toLowerCase()) + 1;
+  if (!mes) return undefined;
+  return `${m[3]}-${String(mes).padStart(2, '0')}-${m[1].padStart(2, '0')}`;
+}
+
+// Título, descrição e dados estruturados (Article) por artigo — o Google precisa disto
+// para mostrar os artigos nas Principais notícias / respostas de IA.
+function useSeoArtigo(artigo) {
+  useEffect(() => {
+    if (!artigo) return undefined;
+    const tituloAnterior = document.title;
+    const metaDesc = document.querySelector('meta[name="description"]');
+    const descAnterior = metaDesc ? metaDesc.getAttribute('content') : null;
+
+    document.title = `${artigo.titulo} | Marco Neves Imobiliário`;
+    if (metaDesc) metaDesc.setAttribute('content', artigo.resumo);
+
+    const data = dataISO(artigo.data);
+    const schema = {
+      '@context': 'https://schema.org',
+      '@type': 'Article',
+      headline: artigo.titulo,
+      description: artigo.resumo,
+      articleSection: artigo.categoria,
+      inLanguage: 'pt-PT',
+      mainEntityOfPage: `${SITE}/blog/${artigo.slug}`,
+      ...(data && { datePublished: data, dateModified: data }),
+      image: [`${SITE}/marco-fato.jpg`],
+      author: {
+        '@type': 'Person',
+        name: 'Marco Neves',
+        url: SITE,
+        jobTitle: 'Consultor Imobiliário RE/MAX',
+      },
+      publisher: {
+        '@type': 'Organization',
+        name: 'Marco Neves Imobiliário',
+        url: SITE,
+        logo: { '@type': 'ImageObject', url: `${SITE}/logo-mn.png` },
+      },
+    };
+    const script = document.createElement('script');
+    script.type = 'application/ld+json';
+    script.id = 'schema-artigo';
+    script.text = JSON.stringify(schema);
+    document.head.appendChild(script);
+
+    return () => {
+      document.title = tituloAnterior;
+      if (metaDesc && descAnterior !== null) metaDesc.setAttribute('content', descAnterior);
+      script.remove();
+    };
+  }, [artigo]);
+}
 
 function renderConteudo(texto) {
   return texto.split('\n').map((linha, i) => {
@@ -20,6 +83,7 @@ function renderConteudo(texto) {
 export default function ArtigoPage() {
   const { slug } = useParams();
   const artigo = ARTIGOS.find(a => a.slug === slug);
+  useSeoArtigo(artigo);
 
   if (!artigo) {
     return (
@@ -54,6 +118,14 @@ export default function ArtigoPage() {
         <div className="container artigo-layout">
           <article className="artigo-conteudo">
             {renderConteudo(artigo.conteudo)}
+
+            <div className="artigo-fonte-preferida">
+              <FontePreferidaGoogle
+                variante="artigo"
+                titulo="Quer ser o primeiro a saber quando o mercado muda?"
+                texto="Adicione Marco Neves como fonte preferida no Google. Quando pesquisar sobre crédito, impostos ou preços das casas, as minhas análises passam a aparecer mais vezes nas Principais notícias e nas respostas de IA."
+              />
+            </div>
           </article>
 
           <aside className="artigo-sidebar">
@@ -95,7 +167,7 @@ export default function ArtigoPage() {
         </div>
       </div>
 
-      <Footer />
+      <Footer mostrarFontePreferida={false} />
     </div>
   );
 }

@@ -119,3 +119,6 @@
   .sidebar-card { flex-direction: row; flex-wrap: wrap; }
   .sidebar-foto { width: 60px; height: 60px; margin: 0; }
 }
+
+/* Fonte preferida Google — fim do artigo */
+.artigo-fonte-preferida { margin-top: 2.5rem; }
