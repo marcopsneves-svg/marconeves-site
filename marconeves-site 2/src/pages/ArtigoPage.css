@@ -122,3 +122,23 @@
 
 /* Fonte preferida Google — fim do artigo */
 .artigo-fonte-preferida { margin-top: 2.5rem; }
+
+/* Nota do terreno — experiência real do Marco, no topo do artigo */
+.artigo-nota-terreno {
+  background: rgba(216, 12, 33, 0.08);
+  border-left: 4px solid var(--red);
+  border-radius: 0 8px 8px 0;
+  padding: 1.2rem 1.4rem;
+  margin-bottom: 2rem;
+}
+.nota-terreno-label {
+  display: block;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+.artigo-nota-terreno p { color: var(--white); font-style: italic; margin-bottom: 0.5rem; }
+.nota-terreno-assinatura { font-size: 0.8rem; font-weight: 600; color: var(--white-muted); }

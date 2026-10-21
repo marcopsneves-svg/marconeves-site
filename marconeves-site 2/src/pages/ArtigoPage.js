@@ -117,6 +117,13 @@ export default function ArtigoPage() {
       <div className="artigo-body">
         <div className="container artigo-layout">
           <article className="artigo-conteudo">
+            {artigo.notaDoTerreno && artigo.notaDoTerreno.trim() && (
+              <aside className="artigo-nota-terreno">
+                <span className="nota-terreno-label">Do terreno, esta semana</span>
+                <p>{artigo.notaDoTerreno.trim()}</p>
+                <span className="nota-terreno-assinatura">Marco Neves</span>
+              </aside>
+            )}
             {renderConteudo(artigo.conteudo)}
 
             <div className="artigo-fonte-preferida">

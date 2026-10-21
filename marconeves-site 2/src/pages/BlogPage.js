@@ -4,7 +4,13 @@ import Navbar from '../components/Navbar';
 import Footer from '../components/Footer';
 import './BlogPage.css';
 
-export const ARTIGOS = [
+// Artigos semanais: um ficheiro .json por artigo na pasta src/artigos.
+// Para publicar um artigo novo basta carregar o ficheiro nessa pasta — não é preciso mexer neste ficheiro.
+// O nome do ficheiro começa pela data (AAAA-MM-DD), por isso o mais recente aparece primeiro.
+const pastaArtigos = require.context('../artigos', false, /\.json$/);
+const ARTIGOS_SEMANAIS = pastaArtigos.keys().sort().reverse().map((k) => pastaArtigos(k));
+
+const ARTIGOS_BASE = [
   {
     slug: 'garantia-publica-jovens-2027-credito-habitacao',
     titulo: 'Garantia Pública em 2027: O Crédito a 100% Para Jovens Vai Continuar?',
@@ -1199,6 +1205,11 @@ Não existe uma resposta única para "onde investir" — depende do horizonte te
 **Está a considerar investir em imobiliário na zona norte de Lisboa?** Faço uma análise personalizada à sua situação e objetivos, com dados reais da região. Entre em contacto comigo — sem custos.
     `
   },
+];
+
+export const ARTIGOS = [
+  ...ARTIGOS_SEMANAIS,
+  ...ARTIGOS_BASE.filter((a) => !ARTIGOS_SEMANAIS.some((n) => n.slug === a.slug)),
 ];
 
 export default function BlogPage() {
