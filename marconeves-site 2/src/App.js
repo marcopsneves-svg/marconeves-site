@@ -1,5 +1,5 @@
-import React from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AvaliacaoPage from './pages/AvaliacaoPage';
 import ViabilidadePage from './pages/ViabilidadePage';
@@ -17,9 +17,27 @@ import AlenquerPage from './pages/AlenquerPage';
 import BenaventePage from './pages/BenaventePage';
 import VilaFrancaPage from './pages/VilaFrancaPage';
 
+// Canonical por página: cada URL diz ao Google que é ela própria a versão oficial
+// (antes, todas as páginas apontavam para a homepage).
+function CanonicalPorPagina() {
+  const { pathname } = useLocation();
+  useEffect(() => {
+    let link = document.querySelector('link[rel="canonical"]');
+    if (!link) {
+      link = document.createElement('link');
+      link.setAttribute('rel', 'canonical');
+      document.head.appendChild(link);
+    }
+    const caminho = pathname.length > 1 ? pathname.replace(/\/+$/, '') : '/';
+    link.setAttribute('href', `https://www.marconevesimobiliario.com${caminho}`);
+  }, [pathname]);
+  return null;
+}
+
 function App() {
   return (
     <Router>
+      <CanonicalPorPagina />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/avaliacao-gratuita" element={<AvaliacaoPage />} />
