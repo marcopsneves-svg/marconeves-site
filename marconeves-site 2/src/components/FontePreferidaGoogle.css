@@ -1,0 +1,71 @@
+/* Botão "Fonte preferida no Google" */
+.fpg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.fpg-copy { flex: 1 1 320px; min-width: 0; }
+
+.fpg-titulo {
+  font-family: var(--font-display);
+  font-weight: 800;
+  color: var(--white);
+  line-height: 1.35;
+}
+
+.fpg-texto {
+  color: var(--white-muted);
+  line-height: 1.6;
+  margin-top: 0.35rem;
+}
+
+.fpg-acao {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+  min-width: 0;
+}
+
+.fpg-btn { min-height: 0; }
+
+.fpg-link {
+  display: inline-block;
+  padding: 0.6rem 1.1rem;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 999px;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--white);
+  transition: border-color 0.2s, background 0.2s;
+}
+.fpg-link:hover { border-color: var(--red); background: rgba(216, 12, 33, 0.12); }
+
+/* Variante rodapé — discreta, em todas as páginas */
+.fpg--rodape {
+  max-width: 1200px;
+  margin: 0 auto 2.5rem;
+  padding: 1.5rem 0 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+.fpg--rodape .fpg-titulo { font-size: 0.9rem; }
+.fpg--rodape .fpg-texto { font-size: 0.8rem; }
+
+/* Variante artigo — no fim de cada artigo do blog */
+.fpg--artigo {
+  background: var(--dark-3);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-left: 4px solid var(--red);
+  border-radius: 8px;
+  padding: 1.6rem 1.8rem;
+}
+.fpg--artigo .fpg-titulo { font-size: 1.05rem; }
+.fpg--artigo .fpg-texto { font-size: 0.88rem; }
+
+@media (max-width: 768px) {
+  .fpg { gap: 1rem; }
+  .fpg--artigo { padding: 1.3rem 1.2rem; }
+}

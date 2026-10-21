@@ -15,9 +15,8 @@
 }
 
 .footer-logo {
-  height: 36px;
+  height: 40px;
   width: auto;
-  filter: brightness(0) invert(1);
   margin-bottom: 0.8rem;
   display: block;
 }

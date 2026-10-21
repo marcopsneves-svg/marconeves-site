@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Footer.css';
+import FontePreferidaGoogle from './FontePreferidaGoogle';
 
-export default function Footer() {
+export default function Footer({ mostrarFontePreferida = true }) {
   return (
     <footer className="footer">
       <div className="footer-inner">
         <div className="footer-brand">
-          <img src="/logo-remax.png" alt="RE/MAX Grupo Vantagem" className="footer-logo" />
+          <img src="/logo-remax-branco.png" alt="RE/MAX Grupo Vantagem" className="footer-logo" />
           <img src="/logo-mn.png" alt="Marco Neves" className="footer-logo-mn" />
           <p className="footer-frase">"Confiança é o início...<br/>Resultados são o caminho"</p>
           <p className="footer-desc">
@@ -30,6 +31,13 @@ export default function Footer() {
           </a>
         </div>
       </div>
+      {mostrarFontePreferida && (
+        <FontePreferidaGoogle
+          variante="rodape"
+          titulo="Veja primeiro as minhas análises de mercado no Google"
+          texto="Adicione Marco Neves como fonte preferida e as minhas análises sobre casas, crédito e impostos passam a aparecer mais vezes nas suas pesquisas."
+        />
+      )}
       <div className="footer-bottom">
         <p>© {new Date().getFullYear()} Marco Neves · RE/MAX Grupo Vantagem. Todos os direitos reservados.</p>
         <p>Licença AMI: 7772</p>
