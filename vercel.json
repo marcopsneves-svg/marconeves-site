@@ -8,7 +8,7 @@
       "destination": "/moradia-benavente-historica.html"
     },
     {
-      "source": "^/blog/([a-z0-9-]+)/?$",
+      "source": "/blog/:slug([a-z0-9-]+)",
       "has": [
         {
           "type": "header",
@@ -16,10 +16,10 @@
           "value": ".*(facebookexternalhit|Facebot|LinkedInBot|WhatsApp|Twitterbot|TelegramBot|Slackbot|Discordbot|Pinterest|SkypeUriPreview|redditbot|Embedly|vkShare|Applebot).*"
         }
       ],
-      "destination": "/og/blog/$1.html"
+      "destination": "/og/blog/:slug.html"
     },
     {
-      "source": "^/blog/?$",
+      "source": "/blog",
       "has": [
         {
           "type": "header",
