@@ -91,23 +91,25 @@ Um T2 pronto a habitar, com preço já bem estimado para o mercado atual. Quem p
       '2.º Andar',
     ],
     remax: 'https://www.remax.pt',
+    // Atenção: os nomes dos ficheiros desta pasta não correspondem ao que mostram.
+    // Ordem pelo conteúdo real: sala → cozinha → varanda → WC → quartos → hall → prédio.
     fotos: [
-      'foto_sala1.jpg',
-      'foto_sala2.jpg',
-      'foto_sala3.jpg',
-      'foto_cozinha1.jpg',
-      'foto_cozinha2.jpg',
-      'foto_cozinha3.jpg',
-      'foto_wc.jpg',
-      'foto_quarto1.jpg',
-      'foto_quarto1b.jpg',
-      'foto_quarto2.jpg',
-      'foto_quarto2b.jpg',
-      'foto_varanda.jpg',
-      'foto_entrada1.jpg',
-      'foto_entrada2.jpg',
-      'foto_garagem.jpg',
-      'foto_predio.jpg',
+      'foto_quarto2.jpg',   // sala + cozinha (capa)
+      'foto_quarto1.jpg',   // sala · sofá
+      'foto_quarto1b.jpg',  // sala · TV
+      'foto_predio.jpg',    // sala de jantar
+      'foto_garagem.jpg',   // cozinha + jantar
+      'foto_quarto2b.jpg',  // cozinha
+      'foto_varanda.jpg',   // cozinha
+      'foto_sala3.jpg',     // vista da varanda
+      'foto_cozinha1.jpg',  // casa de banho
+      'foto_entrada1.jpg',  // quarto principal
+      'foto_entrada2.jpg',  // quarto principal · roupeiro
+      'foto_sala1.jpg',     // 2.º quarto
+      'foto_sala2.jpg',     // 2.º quarto · roupeiro
+      'foto_cozinha2.jpg',  // corredor
+      'foto_cozinha3.jpg',  // hall de entrada
+      'foto_wc.jpg',        // exterior do prédio
     ],
     pasta: 't2-sobralinho',
   },
