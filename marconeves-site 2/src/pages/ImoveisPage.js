@@ -6,6 +6,15 @@ import './ImoveisPage.css';
 
 const IMOVEIS = [
   {
+    id: 9, slug: 't1-alverca-centro', tipo: 'T1', preco: '220 000 €',
+    zona: 'Alverca do Ribatejo', freguesia: 'Centro',
+    area: '55,8 m²', quartos: 1, wc: 1, piso: 'Rés-do-chão',
+    destaque: 'Centro de Alverca · Pé-direito de 2,79 m · Para remodelar',
+    desc: 'T1 para remodelar no núcleo antigo de Alverca, junto à Igreja Matriz. Pé-direito de 2,79 m e comboio para Lisboa a poucos minutos.',
+    foto: '/imoveis/t1-alverca-centro/foto_sala1.jpg',
+    ref: 'MN-ALV-001', energia: 'D',
+  },
+  {
     id: 8, slug: 't2-arcena', tipo: 'T2', preco: '305 000 €',
     zona: 'Alverca do Ribatejo', freguesia: 'Arcena',
     area: '80 m²', quartos: 2, wc: 1, piso: '1.º Andar',
@@ -107,7 +116,7 @@ export default function ImoveisPage() {
       <div className="imoveis-body">
         <div className="container">
           <div className="filtros">
-            {['todos','T2','T3','T4'].map(f => (
+            {['todos','T1','T2','T3','T4'].map(f => (
               <button key={f} className={`filtro-btn ${filtro===f?'ativo':''}`} onClick={() => setFiltro(f)}>
                 {f === 'todos' ? 'Todos' : f}
               </button>

@@ -7,6 +7,62 @@ import FinanciamentoSimulado from '../components/FinanciamentoSimulado';
 import './ImovelPage.css';
 
 const IMOVEIS_DADOS = {
+  't1-alverca-centro': {
+    titulo: 'Apartamento T1 no Centro de Alverca',
+    subtitulo: 'Para remodelar · Rua da Boca Lara · Alverca do Ribatejo',
+    preco: '220 000 €',
+    tipo: 'T1', quartos: 1, wc: 1, area: '55,8 m²', areaUtil: '46,8 m²',
+    piso: 'Rés-do-chão', elevador: false, estacionamento: 'Na via pública', ano: 1962, energia: 'D',
+    ref: 'MN-ALV-001',
+    zona: 'Centro, Alverca do Ribatejo',
+    destaque: 'Centro de Alverca · Pé-direito de 2,79 m · Para remodelar à sua medida',
+    descricao: `Um T1 no centro de Alverca do Ribatejo, para remodelar. Aqui compra-se a localização — e o interior faz-se à medida de quem o compra.
+
+Fica na Rua da Boca Lara, no núcleo antigo da cidade, junto à Igreja Matriz de São Pedro e à Junta de Freguesia. Comércio, cafés e serviços estão à porta, e a estação de comboios fica a poucos minutos, com ligação direta a Lisboa.
+
+O apartamento ocupa o rés-do-chão esquerdo de um prédio de habitação de 1962. Tem 55,8 m² de área bruta privativa e 46,8 m² de área útil, distribuídos por hall de entrada, sala, quarto, cozinha, casa de banho completa e despensa.
+
+Há um pormenor que pesa numa remodelação: o pé-direito médio é de 2,79 m, bem acima do habitual na construção recente. Dá margem para tetos falsos com iluminação embutida ou condutas de ar condicionado sem que a casa perca altura.
+
+O quarto mantém o taco de madeira original, em espinha, que pode ser recuperado. A cozinha está mobilada e tem bancada em granito. Janelas, casa de banho e instalações estão no estado original e pedem obra.
+
+Para quem investe, é um formato com procura constante: um T1 remodelado, no centro e perto do comboio, é dos imóveis que mais facilmente se arrendam em Alverca.
+
+Para quem compra a primeira casa, é a oportunidade de entrar no centro de Alverca e fazer a casa à sua maneira, em vez de pagar a remodelação de outra pessoa. Jovens até aos 35 anos podem ficar isentos de IMT e de Imposto do Selo na compra para habitação própria e permanente, nos termos da lei.
+
+O certificado energético (classe D) já identifica as melhorias com mais impacto — janelas, isolamento e climatização — que a remodelação pode resolver de uma só vez.`,
+    caracteristicas: [
+      '1 Quarto com taco de madeira original',
+      'Sala',
+      '1 Casa de banho completa (com banheira)',
+      'Cozinha mobilada com bancada em granito',
+      'Despensa',
+      'Hall de entrada',
+      'Pé-direito de 2,79 m',
+      'Rés-do-chão',
+      'Prédio de 1962',
+      'Para remodelar',
+      'Centro de Alverca · comboio a poucos minutos',
+    ],
+    remax: 'https://www.remax.pt',
+    fotos: [
+      'foto_sala1.jpg',
+      'foto_sala2.jpg',
+      'foto_sala3.jpg',
+      'foto_quarto1.jpg',
+      'foto_quarto2.jpg',
+      'foto_cozinha1.jpg',
+      'foto_cozinha2.jpg',
+      'foto_cozinha3.jpg',
+      'foto_wc.jpg',
+      'foto_hall.jpg',
+      'foto_hall_despensa.jpg',
+      'foto_predio.jpg',
+      'foto_rua.jpg',
+      'foto_entrada_predio.jpg',
+    ],
+    pasta: 't1-alverca-centro',
+  },
   't2-arcena': {
     titulo: 'Apartamento T2 em Arcena',
     subtitulo: 'Garagem e arrecadação · Arcena · Alverca do Ribatejo',
