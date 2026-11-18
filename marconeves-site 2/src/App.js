@@ -41,6 +41,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/avaliacao-gratuita" element={<AvaliacaoPage />} />
+        <Route path="/avaliacao" element={<AvaliacaoPage />} />
         <Route path="/viabilidade-de-credito" element={<ViabilidadePage />} />
         <Route path="/contacto" element={<ContactoPage />} />
         <Route path="/cartao" element={<CartaoPage />} />
