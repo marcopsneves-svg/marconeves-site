@@ -7,6 +7,8 @@
 // - Se alguma coisa falhar, o site é publicado na mesma, exatamente como antes.
 // - Durante a pré-renderização são bloqueados todos os pedidos para fora do site
 //   (Google Tag Manager, Meta Pixel, Google Ads, APIs), para não criar visitas falsas.
+//   Única exceção: a lista de concelhos e freguesias do HUB (só leitura, não regista nada),
+//   para a página de avaliação aparecer completa e não com "Sem ligação".
 // - As pessoas continuam a ver o site como sempre (o conteúdo pré-renderizado fica escondido
 //   até o React montar a página — ver src/index.js).
 //
@@ -129,6 +131,17 @@ async function abrirBrowser() {
   return puppeteer.launch({ ...base, args: chromium.args, executablePath: await chromium.executablePath() });
 }
 
+// Lista de concelhos/freguesias do HUB (GET /api/avaliacao?acao=locais): só leitura, pode passar.
+function listaDeLocais(pedido) {
+  if (pedido.method() !== 'GET') return false;
+  try {
+    const u = new URL(pedido.url());
+    return u.protocol === 'https:' && u.pathname === '/api/avaliacao' && u.searchParams.get('acao') === 'locais' && [...u.searchParams.keys()].length === 1;
+  } catch (e) {
+    return false;
+  }
+}
+
 // ---------- 4) Rotas a pré-renderizar ----------
 function rotasDoSitemap() {
   try {
@@ -235,7 +248,7 @@ async function principal() {
     const page = await browser.newPage();
     await page.setRequestInterception(true);
     page.on('request', (r) => {
-      if (r.url().startsWith(local) || r.url().startsWith('data:')) r.continue();
+      if (r.url().startsWith(local) || r.url().startsWith('data:') || listaDeLocais(r)) r.continue();
       else r.abort();
     });
     page.on('dialog', (d) => d.dismiss().catch(() => {}));
